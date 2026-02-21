@@ -355,60 +355,84 @@ From Sebastian Farquhar (DeepMind):
 
 **步骤 4：撰写引言（最多 1-1.5 页） | Step 4: Write Introduction (1-1.5 pages max)****
 
-Must include:
-- 2-4 bullet contribution list (max 1-2 lines each in two-column format)
-- Clear problem statement
-- Brief approach overview
-- Methods should start by page 2-3 maximum
+必须包含：
 
-**Step 5: Methods Section**
+Must include:
+- 2-4 条贡献列表（双栏格式每条最多 1-2 行）
+- 清晰的问题陈述
+- 简要方法概述
+- 方法部分最晚从第 2-3 页开始
+
+**步骤 5：方法部分 | Step 5: Methods Section**
+
+实现可重新实现：
 
 Enable reimplementation:
-- Conceptual outline or pseudocode
-- All hyperparameters listed
-- Architectural details sufficient for reproduction
-- Present final design decisions; ablations go in experiments
+- 概念大纲或伪代码
+- 列出所有超参数
+- 架构细节足以复现
+- 呈现最终设计决策；消融实验放入实验部分
 
-**Step 6: Experiments Section**
+**步骤 6：实验部分 | Step 6: Experiments Section**
+
+对于每个实验，明确说明：
 
 For each experiment, explicitly state:
-- What claim it supports
-- How it connects to main contribution
-- Experimental setting (details in appendix)
-- What to observe: "the blue line shows X, which demonstrates Y"
+- 支持什么主张
+- 如何与主要贡献相联系
+- 实验设置（详情见附录）
+- 观察什么："蓝线显示 X，这证明了 Y"
+
+要求：
 
 Requirements:
-- Error bars with methodology (standard deviation vs standard error)
-- Hyperparameter search ranges
-- Compute infrastructure (GPU type, total hours)
-- Seed-setting methods
+- 误差棒及方法论（标准差 vs 标准误）
+- 超参数搜索范围
+- 计算基础设施（GPU 类型、总小时数）
+- 种子设置方法
 
-**Step 7: Related Work**
+**步骤 7：相关工作 | Step 7: Related Work**
+
+按方法组织，而不是逐篇论文：
 
 Organize methodologically, not paper-by-paper:
 
+**好：** "一条研究路线使用 Floogledoodle 的假设 [参考文献]，而我们使用 Doobersnoddle 的假设，因为..."
+
 **Good:** "One line of work uses Floogledoodle's assumption [refs] whereas we use Doobersnoddle's assumption because..."
+
+**坏：** "Snap 等人介绍了 X，而 Crackle 等人介绍了 Y。"
 
 **Bad:** "Snap et al. introduced X while Crackle et al. introduced Y."
 
+慷慨引用——审稿人可能撰写了相关论文。
+
 Cite generously—reviewers likely authored relevant papers.
 
-**Step 8: Limitations Section (REQUIRED)**
+**步骤 8：局限性部分（必需） | Step 8: Limitations Section (REQUIRED)**
+
+所有主要会议都需要这个。反直觉的是，诚实会有帮助：
 
 All major conferences require this. Counter-intuitively, honesty helps:
-- Reviewers are instructed not to penalize honest limitation acknowledgment
-- Pre-empt criticisms by identifying weaknesses first
-- Explain why limitations don't undermine core claims
+- 审稿人被指示不要惩罚诚实地承认局限性
+- 通过首先指出弱点来预先批评
+- 解释为什么局限性不会削弱核心主张
 
-**Step 9: Paper Checklist**
+**步骤 9：论文清单 | Step 9: Paper Checklist**
+
+NeurIPS、ICML 和 ICLR 都需要论文清单。参见 [references/checklists.md](references/checklists.md)。
 
 NeurIPS, ICML, and ICLR all require paper checklists. See [references/checklists.md](references/checklists.md).
 
 ---
 
-## Writing Philosophy for Top ML Conferences
+## 顶级 ML 会议的写作理念 | Writing Philosophy for Top ML Conferences
+
+**本节总结了来自顶尖 ML 研究者的最重要写作原则。** 这些不是可选的风格建议——它们是决定论文被接受还是被拒绝的关键因素。
 
 **This section distills the most important writing principles from leading ML researchers.** These aren't optional style suggestions—they're what separates accepted papers from rejected ones.
+
+> "论文是一个简短、严谨、基于证据的技术故事，带有读者关心的结论。" — Neel Nanda
 
 > "A paper is a short, rigorous, evidence-based technical story with a takeaway readers care about." — Neel Nanda
 
