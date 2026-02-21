@@ -1,31 +1,45 @@
-# Skill authoring best practices
+# 技能创作最佳实践 | Skill authoring best practices
+
+> 学习如何编写有效的技能，让 Claude 能够成功发现和使用它们。
 
 > Learn how to write effective Skills that Claude can discover and use successfully.
 
+好的技能简洁、结构良好，并经过实际使用的测试。本指南提供实用的创作决策，帮助您编写 Claude 可以有效发现和使用的技能。
+
 Good Skills are concise, well-structured, and tested with real usage. This guide provides practical authoring decisions to help you write Skills that Claude can discover and use effectively.
+
+有关技能如何工作的概念背景，请参阅 [技能概览](/en/docs/agents-and-tools/agent-skills/overview)。
 
 For conceptual background on how Skills work, see the [Skills overview](/en/docs/agents-and-tools/agent-skills/overview).
 
-## Core principles
+## 核心原则 | Core principles
 
-### Concise is key
+### 简洁是关键 | Concise is key
+
+**上下文窗口是公共资源。** 您的技能与 Claude 需要知道的所有其他内容共享上下文窗口，包括：
 
 The [context window](/en/docs/build-with-claude/context-windows) is a public good. Your Skill shares the context window with everything else Claude needs to know, including:
 
-* The system prompt
-* Conversation history
-* Other Skills' metadata
-* Your actual request
+* 系统提示 | The system prompt
+* 对话历史 | Conversation history
+* 其他技能的元数据 | Other Skills' metadata
+* 您的实际请求 | Your actual request
+
+并非您技能中的每个 token 都有直接成本。在启动时，仅预加载所有技能的元数据（名称和描述）。当技能相关时，Claude 才读取 SKILL.md，并在需要时读取其他文件。然而，保持简洁仍然重要：一旦 Claude 加载它，每个 token 都会与对话历史和其他上下文竞争。
 
 Not every token in your Skill has an immediate cost. At startup, only the metadata (name and description) from all Skills is pre-loaded. Claude reads SKILL.md only when the Skill becomes relevant, and reads additional files only as needed. However, being concise in SKILL.md still matters: once Claude loads it, every token competes with conversation history and other context.
 
+**默认假设**：Claude 已经很聪明
+
 **Default assumption**: Claude is already very smart
+
+只添加 Claude 还没有的上下文。挑战每条信息：
 
 Only add context Claude doesn't already have. Challenge each piece of information:
 
-* "Does Claude really need this explanation?"
-* "Can I assume Claude knows this?"
-* "Does this paragraph justify its token cost?"
+* "Claude 真的需要这个解释吗？" | "Does Claude really need this explanation?"
+* "我能假设 Claude 知道这个吗？" | "Can I assume Claude knows this?"
+* "这段话能证明它的 token 成本合理吗？" | "Does this paragraph justify its token cost?"
 
 **Good example: Concise** (approximately 50 tokens):
 
