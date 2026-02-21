@@ -1,6 +1,8 @@
-# AI Research Skills - Demo Gallery
+# AI 研究技能 - 演示库 | Demo Gallery
 
-> **Curated collection of demo repositories showcasing skills in action**
+> **精选的演示仓库集合，展示技能的实际应用**
+
+每个演示都是一个独立的仓库，展示如何使用此库中的特定技能来完成真实的 AI 研究任务。演示包含完整的代码、结果、分析和文档。
 
 Each demo is a standalone repository demonstrating how to use specific skills from this library to accomplish real AI research tasks. Demos include complete code, results, analysis, and documentation.
 
