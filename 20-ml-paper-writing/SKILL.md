@@ -71,10 +71,12 @@ If you cannot programmatically verify a citation, you MUST:
 
 For the best paper search experience, install **Exa MCP** which provides real-time academic search:
 
-**Claude Code:**
+Claude Code:
 ```bash
 claude mcp add exa -- npx -y mcp-remote "https://mcp.exa.ai/mcp"
 ```
+
+**Cursor / VS Code**（添加到 MCP 设置）:
 
 **Cursor / VS Code** (add to MCP settings):
 ```json
@@ -88,118 +90,152 @@ claude mcp add exa -- npx -y mcp-remote "https://mcp.exa.ai/mcp"
 }
 ```
 
+Exa MCP 支持搜索示例：
+
 Exa MCP enables searches like:
-- "Find papers on RLHF for language models published after 2023"
-- "Search for transformer architecture papers by Vaswani"
-- "Get recent work on sparse autoencoders for interpretability"
+- "查找 2023 年后发表的 RLHF 语言模型论文" | "Find papers on RLHF for language models published after 2023"
+- "搜索 Vaswani 的 transformer 架构论文" | "Search for transformer architecture papers by Vaswani"
+- "获取关于稀疏自编码器和可解释性的最新工作" | "Get recent work on sparse autoencoders for interpretability"
+
+然后通过 Semantic Scholar API 验证结果并通过 DOI 获取 BibTeX。
 
 Then verify results with Semantic Scholar API and fetch BibTeX via DOI.
 
 ---
 
-## Workflow 0: Starting from a Research Repository
+## 工作流 0：从研究仓库开始 | Workflow 0: Starting from a Research Repository
+
+开始论文写作时，首先理解项目：
 
 When beginning paper writing, start by understanding the project:
 
 ```
-Project Understanding:
-- [ ] Step 1: Explore the repository structure
-- [ ] Step 2: Read README, existing docs, and key results
-- [ ] Step 3: Identify the main contribution with the scientist
-- [ ] Step 4: Find papers already cited in the codebase
-- [ ] Step 5: Search for additional relevant literature
-- [ ] Step 6: Outline the paper structure together
-- [ ] Step 7: Draft sections iteratively with feedback
+项目理解 | Project Understanding:
+- [ ] 步骤 1：探索仓库结构 | Step 1: Explore the repository structure
+- [ ] 步骤 2：阅读 README、现有文档和关键结果 | Step 2: Read README, existing docs, and key results
+- [ ] 步骤 3：与科学家一起确定主要贡献 | Step 3: Identify the main contribution with the scientist
+- [ ] 步骤 4：查找代码库中已引用的论文 | Step 4: Find papers already cited in the codebase
+- [ ] 步骤 5：搜索其他相关文献 | Step 5: Search for additional relevant literature
+- [ ] 步骤 6：共同概述论文结构 | Step 6: Outline the paper structure together
+- [ ] 步骤 7：迭代起草各部分 | Step 7: Draft sections iteratively with feedback
 ```
 
-**Step 1: Explore the Repository**
+**步骤 1：探索仓库 | Step 1: Explore the Repository**
 
 ```bash
-# Understand project structure
+# 理解项目结构 | Understand project structure
 ls -la
 find . -name "*.py" | head -20
 find . -name "*.md" -o -name "*.txt" | xargs grep -l -i "result\|conclusion\|finding"
 ```
 
-Look for:
-- `README.md` - Project overview and claims
-- `results/`, `outputs/`, `experiments/` - Key findings
-- `configs/` - Experimental settings
-- Existing `.bib` files or citation references
-- Any draft documents or notes
+寻找以下内容：
 
-**Step 2: Identify Existing Citations**
+Look for:
+- `README.md` - 项目概览和声明 | Project overview and claims
+- `results/`, `outputs/`, `experiments/` - 关键发现 | Key findings
+- `configs/` - 实验设置 | Experimental settings
+- 现有的 `.bib` 文件或引用参考 | Existing `.bib` files or citation references
+- 任何草稿文档或笔记 | Any draft documents or notes
+
+**步骤 2：识别现有引用 | Step 2: Identify Existing Citations**
+
+检查代码库中已引用的论文：
 
 Check for papers already referenced in the codebase:
 
 ```bash
-# Find existing citations
+# 查找现有引用 | Find existing citations
 grep -r "arxiv\|doi\|cite" --include="*.md" --include="*.bib" --include="*.py"
 find . -name "*.bib"
 ```
 
+这些是相关工作的高信号起点——科学家已经认为它们相关。
+
 These are high-signal starting points for Related Work—the scientist has already deemed them relevant.
 
-**Step 3: Clarify the Contribution**
+**步骤 3：澄清贡献 | Step 3: Clarify the Contribution**
+
+在写作之前，明确与科学家确认：
 
 Before writing, explicitly confirm with the scientist:
 
-> "Based on my understanding of the repo, the main contribution appears to be [X].
-> The key results show [Y]. Is this the framing you want for the paper,
-> or should we emphasize different aspects?"
+> "根据我对仓库的理解，主要贡献似乎是 [X]。关键结果显示 [Y]。这是您想要的论文框架吗，还是应该强调不同的方面？"
+
+> "Based on my understanding of the repo, the main contribution appears to be [X]. The key results show [Y]. Is this the framing you want for the paper, or should we emphasize different aspects?"
+
+**绝不要假设叙述——始终与人类验证。**
 
 **Never assume the narrative—always verify with the human.**
 
-**Step 4: Search for Additional Literature**
+**步骤 4：搜索其他文献 | Step 4: Search for Additional Literature**
+
+使用网络搜索查找相关论文：
 
 Use web search to find relevant papers:
 
 ```
-Search queries to try:
-- "[main technique] + [application domain]"
-- "[baseline method] comparison"
-- "[problem name] state-of-the-art"
-- Author names from existing citations
+尝试的搜索查询 | Search queries to try:
+- "[主要技术] + [应用领域]" | "[main technique] + [application domain]"
+- "[基线方法] comparison" | "[baseline method] comparison"
+- "[问题名称] state-of-the-art" | "[problem name] state-of-the-art"
+- 现有引用的作者名 | Author names from existing citations
 ```
+
+然后使用下面的引用工作流验证并获取 BibTeX。
 
 Then verify and retrieve BibTeX using the citation workflow below.
 
-**Step 5: Deliver a First Draft**
+**步骤 5：提供初稿 | Step 5: Deliver a First Draft**
+
+**要主动——提供完整草稿，而不是为每个部分征求许可。**
 
 **Be proactive—deliver a complete draft rather than asking permission for each section.**
 
+如果仓库提供清晰的结果且贡献显而易见：
+
 If the repo provides clear results and the contribution is apparent:
-1. Write the full first draft end-to-end
-2. Present the complete draft for feedback
-3. Iterate based on scientist's response
+1. 从头到尾写完整初稿 | Write the full first draft end-to-end
+2. 提交完整草稿以获取反馈 | Present the complete draft for feedback
+3. 根据科学家的回应迭代 | Iterate based on scientist's response
+
+如果真正不确定框架或主要声明：
 
 If genuinely uncertain about framing or major claims:
-1. Draft what you can confidently
-2. Flag specific uncertainties: "I framed X as the main contribution—let me know if you'd prefer to emphasize Y instead"
-3. Continue with the draft rather than blocking
+1. 起草你可以自信完成的部分 | Draft what you can confidently
+2. 标记具体的不确定性："我将 X 框定为主要贡献——如果您想强调 Y，请告诉我" | Flag specific uncertainties: "I framed X as the main contribution—let me know if you'd prefer to emphasize Y instead"
+3. 继续起草而不是阻塞 | Continue with the draft rather than blocking
+
+**在草稿中包含的问题**（而不是之前）：
 
 **Questions to include with the draft** (not before):
-- "I emphasized X as the main contribution—adjust if needed"
-- "I highlighted results A, B, C—let me know if others are more important"
-- "Related work section includes [papers]—add any I missed"
+- "我强调 X 作为主要贡献——根据需要调整" | "I emphasized X as the main contribution—adjust if needed"
+- "我突出了结果 A、B、C——让我知道是否还有其他更重要的" | "I highlighted results A, B, C—let me know if others are more important"
+- "相关工作部分包括 [论文]——添加任何我遗漏的" | "Related work section includes [papers]—add any I missed"
 
 ---
 
-## When to Use This Skill
+## 何时使用此技能 | When to Use This Skill
+
+使用此技能当：
 
 Use this skill when:
-- **Starting from a research repo** to write a paper
-- **Drafting or revising** specific sections
-- **Finding and verifying citations** for related work
-- **Formatting** for conference submission
-- **Resubmitting** to a different venue (format conversion)
-- **Iterating** on drafts with scientist feedback
+- **从研究仓库开始写论文** | **Starting from a research repo** to write a paper
+- **起草或修改**特定部分 | **Drafting or revising** specific sections
+- **查找和验证引用**用于相关工作 | **Finding and verifying citations** for related work
+- **格式化**会议提交 | **Formatting** for conference submission
+- **重新提交**到其他场所（格式转换） | **Resubmitting** to a different venue (format conversion)
+- **与科学家反馈迭代**草稿 | **Iterating** on drafts with scientist feedback
+
+**始终记住**：初稿是讨论的起点，而不是最终输出。
 
 **Always remember**: First drafts are starting points for discussion, not final outputs.
 
 ---
 
-## Balancing Proactivity and Collaboration
+## 平衡主动性和协作性 | Balancing Proactivity and Collaboration
+
+**默认：要主动。提供草稿，然后迭代。**
 
 **Default: Be proactive. Deliver drafts, then iterate.**
 
