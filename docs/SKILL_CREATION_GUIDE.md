@@ -1,22 +1,22 @@
-# Skill Creation Guide
+# 技能创建指南 | Skill Creation Guide
 
-**Based on**: [Anthropic Official Best Practices](anthropic_official_docs/best_practices.md)
-**Last Updated**: November 6, 2025
+**基于**：[Anthropic官方最佳实践](anthropic_official_docs/best_practices.md)
+**最后更新**：2025年11月6日
 
 ---
 
-## Core Principles (from Anthropic)
+## 核心原则（来自Anthropic）| Core Principles (from Anthropic)
 
-### 1. Concise is Key
+### 1. 简洁是关键 | 1. Concise is Key
 
-**The context window is a public good.** Your skill shares it with system prompts, conversation history, and other skills.
+**上下文窗口是公共资源。** 你的技能与系统提示、对话历史和其他技能共享它。
 
-**Default assumption: Claude is already smart**
+**默认假设：Claude已经足够聪明**
 
-Only add context Claude doesn't already have. Challenge each piece of information:
-- "Does Claude really need this explanation?"
-- "Can I assume Claude knows this?"
-- "Does this paragraph justify its token cost?"
+只添加Claude没有的上下文。挑战每一条信息：
+- "Claude真的需要这个解释吗？"
+- "我能假设Claude知道这个吗？"
+- "这个段落值得它的token成本吗？"
 
 **Good** (50 tokens):
 ```markdown

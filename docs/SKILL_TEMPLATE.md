@@ -1,6 +1,6 @@
 ---
 name: example-skill-name
-description: Brief third-person description of what this skill does and when to use it. Include key terms and triggers for discovery. Maximum 1024 characters.
+description: 简要的第三人称描述，说明这个技能是什么以及何时使用。包括关键字和发现触发词。最多1024个字符。
 version: 1.0.0
 author: Orchestra Research
 license: MIT
@@ -8,99 +8,99 @@ tags: [Tag One, Tag Two, Tag Three, Key Concept, Use Case]
 dependencies: [package1>=1.0.0, package2>=2.0.0]
 ---
 
-# [Skill Title]
+# [技能标题] | [Skill Title]
 
-## Quick start
+## 快速开始 | Quick start
 
-[One paragraph overview of what this skill provides]
+[这个技能提供什么的概述]
 
-**Basic usage**:
+**基础用法** | **Basic usage**:
 ```[language]
-# Minimal working example (5-10 lines)
+# 最简工作示例 (5-10行)
 import library
 result = library.function(input)
 print(result)
 ```
 
-## Common workflows
+## 常见工作流 | Common workflows
 
-### Workflow 1: [Primary Use Case]
+### 工作流1：[主要用例] | Workflow 1: [Primary Use Case]
 
-Copy this checklist and track progress:
+复制此清单并跟踪进度 | Copy this checklist and track progress:
 
 ```
-Task Progress:
-- [ ] Step 1: [First action]
-- [ ] Step 2: [Second action]
-- [ ] Step 3: [Validation step]
-- [ ] Step 4: [Completion step]
+任务进度 | Task Progress:
+- [ ] 步骤1：[第一个操作]
+- [ ] 步骤2：[第二个操作]
+- [ ] 步骤3：[验证步骤]
+- [ ] 步骤4：[完成步骤]
 ```
 
-**Step 1: [First action]**
+**步骤1：[第一个操作]** | **Step 1: [First action]**
 
-[Brief instruction - assume Claude knows basics]
+[简要说明 - 假设Claude了解基础知识]
 
 ```[language]
-# Code example
-[concise code]
+# 代码示例
+[简洁代码]
 ```
 
-**Step 2: [Second action]**
+**步骤2：[第二个操作]** | **Step 2: [Second action]**
 
-[Brief instruction]
+[简要说明]
 
 ```[language]
-# Code example
-[concise code]
+# 代码示例
+[简洁代码]
 ```
 
-**Step 3: [Validation step]**
+**步骤3：[验证步骤]** | **Step 3: [Validation step]**
 
-Run validator and fix errors if found:
+运行验证器并修复错误（如果发现）:
 
 ```bash
 validate_script.py input.json
-# If errors: fix → validate again → continue
+# 如果有错误：修复 → 再次验证 → 继续
 ```
 
-**Step 4: [Completion step]**
+**步骤4：[完成步骤]** | **Step 4: [Completion step]**
 
-[Final action]
+[最终操作]
 
-### Workflow 2: [Secondary Use Case]
+### 工作流2：[次要用例] | Workflow 2: [Secondary Use Case]
 
-[Similar structure with checklist]
+[类似结构，带清单]
 
-## When to use vs alternatives
+## 与替代方案的使用场景 | When to use vs alternatives
 
-**Use this when:**
-- [Specific scenario 1]
-- [Specific scenario 2]
+**在以下情况下使用此技能** | **Use this when**:
+- [具体场景1]
+- [具体场景2]
 
-**Use [Alternative] instead when:**
-- [Different scenario]
+**在以下情况下使用[替代方案]** | **Use [Alternative] instead when**:
+- [不同场景]
 
-## Common issues
+## 常见问题 | Common issues
 
-**Issue: [Error message or problem]**
+**问题：[错误信息或问题]**
 
-Fix by adjusting [parameter]:
+通过调整[参数]来修复:
 ```[language]
-# Solution code
-[concise fix]
+# 解决方案代码
+[简洁修复]
 ```
 
-**Issue: [Another common problem]**
+**问题：[另一个常见问题]**
 
-Check [specific requirement], then [action].
+检查[具体要求]，然后[操作]。
 
-## Advanced topics
+## 高级主题 | Advanced topics
 
-**[Advanced feature 1]**: See [references/advanced-features.md](references/advanced-features.md)
-**[Advanced feature 2]**: See [references/optimization.md](references/optimization.md)
-**[API reference]**: See [references/api-reference.md](references/api-reference.md)
+**[高级功能1]**：参见 [references/advanced-features.md](references/advanced-features.md)
+**[高级功能2]**：参见 [references/optimization.md](references/optimization.md)
+**[API参考]**：参见 [references/api-reference.md](references/api-reference.md)
 
-## Resources
+## 资源 | Resources
 
-- Official docs: [URL]
-- GitHub: [URL]
+- 官方文档：[URL]
+- GitHub：[URL]

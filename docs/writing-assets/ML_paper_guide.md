@@ -1,90 +1,90 @@
-# The Complete Guide to Writing Top-Quality ML Academic Papers
+# 撰写高质量ML学术论文的完整指南 | The Complete Guide to Writing Top-Quality ML Academic Papers
 
-Writing successful ML papers for venues like NeurIPS, ICML, and ICLR demands mastery of a specific craft: translating rigorous technical work into a compelling narrative that busy reviewers can quickly evaluate. **The single most critical insight across all expert sources: your paper is not a collection of experiments—it's a story with one clear contribution supported by evidence.** This guide synthesizes advice from prominent researchers including Neel Nanda, Andrej Karpathy, Jacob Steinhardt, and Sebastian Farquhar, alongside official conference guidelines and practical tools for citation management.
+为NeurIPS、ICML和ICLR等顶级会议撰写成功的ML论文需要掌握一项特定技能：将严谨的技术工作转化为引人入胜的叙事，让忙碌的审稿人能够快速评估。**所有专家来源最关键的见解：你的论文不是实验的集合——而是一个有一个明确贡献并有证据支持的故事。**本指南综合了包括Neel Nanda、Andrej Karpathy、Jacob Steinhardt和Sebastian Farquhar在内的知名研究人员的建议，以及官方会议指南和引文管理的实用工具。
 
-The stakes are high: top ML conferences maintain **~25% acceptance rates**, and reviewers spend limited time per paper. Seminal work like Adam and Knowledge Distillation faced initial rejections. Success requires not just strong research but strategic communication—front-loading value, maintaining precision, and providing reproducibility details that build reviewer confidence.
-
----
-
-## The narrative principle that separates accepted papers
-
-Every successful ML paper centers on what Neel Nanda calls "the narrative": a short, rigorous, evidence-based technical story with a takeaway readers care about. This narrative rests on three pillars that must be crystal clear by the end of your introduction.
-
-**The "What"** consists of one to three specific novel claims fitting within a cohesive theme. Vague contributions like "we study X" fail immediately—reviewers need precise, falsifiable claims. **The "Why"** provides rigorous empirical evidence that convincingly supports those claims, including strong baselines honestly tuned and experiments that distinguish between competing hypotheses rather than merely showing "decent results." **The "So What"** answers why readers should care, connecting your contribution to problems the community recognizes as important.
-
-Andrej Karpathy reinforces this: "A paper is not a random collection of experiments you report on. The paper sells a single thing that was not obvious or present before. The entire paper is organized around this core contribution with surgical precision." This applies whether you're presenting a new architecture, a theoretical result, or improved understanding of existing methods—NeurIPS explicitly notes that "originality does not necessarily require an entirely new method."
-
-The practical implication is severe: if you cannot state your contribution in one sentence, you don't yet have a paper. Everything else—experiments, related work, discussion—exists only to support that core claim.
+ stakes很高：顶级ML会议保持**~25%的接受率**，审稿人每篇论文花费的时间有限。开创性的工作如Adam和知识蒸馏曾面临初始拒绝。成功不仅需要强大的研究，还需要战略性沟通——前置价值、保持精确，并提供可复现性细节以建立审稿人的信心。
 
 ---
 
-## Front-load value: the title-to-methods pipeline
+## 区分录取论文的叙事原则 | The narrative principle that separates accepted papers
 
-Readers encounter your paper in a predictable pattern: title → abstract → introduction → figures → maybe the rest. Nanda advises spending "about the same amount of time on each of: the abstract, the intro, the figures, and everything else." This isn't hyperbole—most reviewers form preliminary judgments before reaching your methods section.
+每篇成功的ML论文都围绕Neel Nanda所说的"叙事"展开：一个简短、严谨、基于证据的技术故事，包含读者关心的要点。这个叙事建立在三个支柱上，在引言结束时必须清晰明了。
 
-**The abstract** follows a tight five-sentence structure perfected by Sebastian Farquhar: (1) What you achieved ("We introduce...", "We prove...", "We demonstrate..."), (2) Why this is hard and important, (3) How you do it with specialist keywords, (4-5) What evidence you have, including your most remarkable number. Generic openings like "Large language models have achieved remarkable success" waste precious space—Zachary Lipton's rule: "If the first sentence can be pre-pended to any ML paper, delete it."
+**"是什么"（What）** 由一到三个符合连贯主题的具体新颖声明组成。像"我们研究X"这样模糊的贡献立即失败——审稿人需要精确的、可证伪的声明。**"为什么"（Why）** 提供严谨的经验证据，令人信服地支持这些声明，包括诚心调优的强大基线，以及区分竞争假设而非仅仅展示"不错结果"的实验。**"那又怎样"（So What）** 回答为什么读者应该关心，将你的贡献与社区公认重要的问题联系起来。
 
-**The introduction** should not exceed 1-1.5 pages and must include a bullet-point contribution list of 2-4 items (max 1-2 lines each in two-column format). Farquhar emphasizes: "Methods should start by page 2-3 maximum"—if your introduction runs longer, you're burying the actual contribution.
+Andrej Karpathy强化了这一点："论文不是你随机报告的实验集合。论文推销的是以前不存在或不明显的一个东西。整个论文都围绕这个核心贡献以手术般的精确度组织。"无论你展示的是新架构、理论结果还是对现有方法的更好理解，情况都是如此——NeurIPS明确指出"原创性不一定需要全新的方法。"
 
-**Figure 1** deserves special attention because many readers skip directly to it. It should convey your core idea, approach, or most compelling result. Use vector graphics, ensure readability in black-and-white, and write captions that stand alone without requiring the main text.
-
----
-
-## Section-by-section execution matters
-
-**Related Work** should be organized methodologically, not paper-by-paper. Good: "One line of work uses Floogledoodle's assumption [refs] whereas we use Doobersnoddle's assumption because..." Bad: "Snap et al. introduced X while Crackle et al. introduced Y." Cite generously—reviewers likely authored relevant papers—and distribute citations throughout your paper rather than confining them to one section.
-
-**Methods** must enable reimplementation. ICML's checklist requires: conceptual outline or pseudocode, clearly stated algorithms, all hyperparameters listed, and architectural details sufficient for reproduction. Present your final design decisions here; comparative ablations belong in experiments or appendix.
-
-**Experiments** require explicit structure. For each experiment, state: what claim it supports, how it connects to your main contribution, the experimental setting (with details in appendix), and explicit guidance on what to observe in figures ("the blue line shows X, which demonstrates Y"). The ICML checklist mandates: error bars with methodology specified (standard deviation vs. standard error), hyperparameter search ranges, compute infrastructure (GPU type, total hours), and seed-setting methods.
-
-**Limitations** deserve their own section—NeurIPS and ICML require this. Counter-intuitively, honesty helps: reviewers are explicitly instructed not to penalize papers for acknowledging limitations. Pre-empt criticisms by identifying weaknesses before reviewers do and explaining why they don't undermine your core claims.
+实际含义很严重：如果你不能用一句话陈述你的贡献，你就还没有一篇论文。其他一切——实验、相关工作、讨论——都只是为了支持那个核心声明。
 
 ---
 
-## Writing style that signals quality
+## 前置价值：从标题到方法的流程 | Front-load value: the title-to-methods pipeline
 
-Gopen and Swan's "Science of Scientific Writing" establishes principles that ML papers routinely violate. **Place emphasis at sentence ends** (the "stress position"): readers naturally weight final words more heavily. **Put context first**: establish familiar information before introducing new concepts. **Keep subject and verb close together**: anything intervening reads as interruption. **One unit, one function**: each paragraph should make exactly one point.
+读者以可预测的模式接触你的论文：标题 → 摘要 → 引言 → 图表 → 可能的其他部分。Nanda建议在"摘要、引言、图表和其他所有内容上花费大致相同的时间。"这并非夸张——大多数审稿人在到达你的方法部分之前就形成了初步判断。
 
-Specific style rules from multiple sources converge on these practices. Minimize pronouns—if you must use "this" or "those," use them as adjectives ("this result") to provide clarity. Place verbs early in sentences for easier parsing. Use minimal-syllable words. Eliminate hedging unless genuine uncertainty exists—"may" and "can" should almost always be dropped. Lipton notes that "provides *very* tight approximation" drips with insecurity compared to "provides tight approximation."
+**摘要**遵循Sebastian Farquhar完善的五句结构：(1) 你完成了什么（"我们引入..."，"我们证明..."，"我们展示..."），(2) 为什么这很难且重要，(3) 你如何用专业术语做到这一点，(4-5) 你有什么证据，包括你最出色的数字。像"大型语言模型取得了显著成功"这样的通用开头浪费了宝贵空间——Zachary Lipton的规则："如果第一句话可以加在任何ML论文前面，删除它。"
 
-Jacob Steinhardt emphasizes precision over brevity: replace "performance" with "accuracy" or "speed" depending on meaning. Use consistent phrasing—referring to the same concept with different terms creates confusion. Avoid vocabulary that signals incremental work: never "combine," "modify," or "expand"; instead "develop" or "propose."
+**引言**不应超过1-1.5页，必须包含2-4项的要点贡献列表（双栏格式每项最多1-2行）。Farquhar强调："方法部分应最多从第2-3页开始"——如果你的引言更长，你就是在埋没实际贡献。
 
-For mathematical writing, state all assumptions formally, provide intuitive explanations alongside proofs, and use consistent notation. Ethan Perez's practical tip: unfold apostrophes ("X's Y" → "The Y of X") for clarity.
-
----
-
-## Tables, figures, and visual communication
-
-**Tables** should use the booktabs LaTeX package for professional appearance—avoid vertical lines, use horizontal rules sparingly. Bold the best value per metric and include symbols indicating direction (↑ higher is better, ↓ lower is better). Right-align numerical columns and maintain consistent decimal precision across all values.
-
-**Figures** must be vector graphics (PDF, EPS) for plots and diagrams; raster formats (PNG at 600 DPI) only for photographs or dense visualizations. Critical accessibility requirement: **8% of men have color vision deficiency**. Use the Okabe-Ito or Paul Tol palettes, avoid red-green combinations, and verify your figures work in grayscale. The SciencePlots Python package provides publication-ready styles with a single line: `plt.style.use(['science', 'ieee'])`.
-
-**Architecture diagrams** benefit from TikZ via PlotNeuralNet (GitHub: HarisIqbal88/PlotNeuralNet), which generates LaTeX code from Python. For training visualizations, include shaded regions showing variance across runs and use log scale when values span multiple orders of magnitude.
-
-**Captions** should be self-contained—readers must understand figures without consulting main text. ICML explicitly states: "Do not include a title inside the figure; the caption should serve this function."
+**图1**值得特别关注，因为许多读者直接跳转到它。它应该传达你的核心思想、方法或最令人信服的结果。使用矢量图形，确保黑白可读性，并编写可以独立存在而无需参考正文的图注。
 
 ---
 
-## Conference requirements every submission must meet
+## 逐节执行很重要 | Section-by-section execution matters
 
-**NeurIPS 2025**: 9 content pages plus unlimited references; mandatory paper checklist covering reproducibility, ethics, and societal impact (desk rejection if missing); 6-point scoring system; lay summaries required for accepted papers. Reviews of accepted papers become public.
+**相关工作**应按方法论组织，而非逐篇论文。好："一波工作使用Floogledoodle的假设[refs]，而我们使用Doobersnoddle的假设是因为..."差："Snap等人引入了X，而Crackle等人引入了Y。"慷慨引用——审稿人可能是相关论文的作者——并将引用分散在整个论文中，而非局限于一个部分。
 
-**ICML 2025**: 8 content pages plus one additional page allowed for camera-ready; Broader Impact Statement required at end before references (doesn't count toward limit); reciprocal reviewing requirement—all submissions need a designated reviewer from authors.
+**方法**必须能够实现复现。ICML的清单要求：概念概述或伪代码，清晰陈述的算法，列出所有超参数，以及足以复现的架构细节。在此展示你的最终设计决策；比较消融放在实验或附录中。
 
-**ICLR 2025-2026**: 10 pages plus unlimited appendices; double-blind via OpenReview; new LLM policy requiring disclosure of AI use in writing (violations result in desk rejection).
+**实验**需要明确的结构。对于每个实验，说明：它支持什么声明，它如何与你的主要贡献相关，实验设置（附录中有详细说明），以及关于在图表中观察什么的明确指导（"蓝线显示X，这证明了Y"）。ICML清单要求：说明方法论的误差线（标准差 vs 标准误差），超参数搜索范围，计算基础设施（GPU类型，总小时数）和随机种子设置方法。
 
-All three conferences evaluate papers on four core dimensions: **quality** (technical soundness, well-supported claims), **clarity** (clear writing, reproducible by experts), **significance** (community impact, advances understanding), and **originality** (new insights, clear differentiation from prior work). Reviewers separate concerns into major issues (essential for publication) and minor issues (not essential), and strong reviews follow Daniel Dennett's rules: first re-express the position fairly, then list agreements and what you learned, only then critique.
+**局限性**值得单独一节——NeurIPS和ICML要求这个。相反，诚实有帮助：审稿人明确被指示不要因为承认局限性而惩罚论文。预先阻止批评——在审稿人之前识别弱点并解释为什么它们不会破坏你的核心声明。
 
 ---
 
-## Citation APIs that prevent hallucination
+## 表明质量的写作风格 | Writing style that signals quality
 
-AI-generated citations have a documented **~40% error rate**, including fabricated papers with real author names and fake titles. A reliable workflow requires programmatic verification through multiple APIs.
+Gopen和Swan的《科学写作科学》确立了ML论文经常违反的原则。**将强调放在句子结尾**（"应力位置"）：读者自然更重视最后的词。**先放上下文**：在引入新概念之前建立熟悉信息。**保持主语和动词靠近**：任何介于中间的内容都会被理解为干扰。**一个单元，一个功能**：每个段落应该只做一个 point。
 
-**Semantic Scholar** (api.semanticscholar.org) covers 214M papers with 2.49B citations. Rate limit: 1 RPS with free API key. Python library: `pip install semanticscholar`. Search, retrieve metadata, and access citation graphs—ideal for ML papers specifically.
+多个来源的具体风格规则汇聚在以下实践上。尽量少用代词——如果必须使用"this"或"those"，将它们用作形容词（"this result"）以提供清晰度。早放动词以便于解析。使用最少音节的词。消除犹豫——除非真正存在不确定性——"may"和"can"几乎总是应该删除。Lipton注意到"提供*非常*紧密的近似"充满不安全感，相比"提供紧密的近似"。
 
-**CrossRef** (api.crossref.org) is the primary source for DOI metadata and offers direct BibTeX retrieval via content negotiation:
+Jacob Steinhardt强调精确胜于简洁：根据含义将"performance"替换为"accuracy"或"speed"。使用一致的措辞——用不同术语指代同一概念会造成混淆。避免表明增量工作的词汇：永远不要"combine"、"modify"或"expand"；而是使用"develop"或"propose"。
+
+对于数学写作，正式陈述所有假设，与证明一起提供直观解释，并使用一致的符号。Ethan Perez的实用技巧：展开撇号（"X's Y" → "The Y of X"）以提高清晰度。
+
+---
+
+## 表格、图表和视觉传达 | Tables, figures, and visual communication
+
+**表格**应使用booktabs LaTeX包以获得专业外观——避免竖线，谨慎使用横线。为每个指标的最佳值加粗，并包含指示方向的符号（↑越高越好，↓越低越好）。右对齐数值列，并在所有值中保持一致的小数精度。
+
+**图表**必须是矢量图形（PDF、EPS）用于图表和图示；光栅格式（600 DPI的PNG）仅用于照片或密集可视化。关键无障碍要求：**8%的男性有色觉缺陷**。使用Okabe-Ito或Paul Tol调色板，避免红绿组合，并验证你的图表在灰度下可用。SciencePlots Python包提供出版就绪的样式，只需一行代码：`plt.style.use(['science', 'ieee'])`。
+
+**架构图**受益于通过PlotNeuralNet（GitHub: HarisIqbal88/PlotNeuralNet）使用TikZ，它从Python生成LaTeX代码。对于训练可视化，包含显示运行间方差的阴影区域，并在值跨越多个数量级时使用对数刻度。
+
+**图注**应该是自包含的——读者必须能够在不查阅正文的情况下理解图表。ICML明确指出："不要在图表内包含标题；图注应该起到这个作用。"
+
+---
+
+## 每个提交必须满足的会议要求 | Conference requirements every submission must meet
+
+**NeurIPS 2025**：9页内容加上无限参考文献；强制论文清单涵盖可复现性、伦理和社会影响（缺失则直接拒绝）；6分评分系统；接受的论文需要通俗摘要。接受论文的评审意见将公开。
+
+**ICML 2025**：8页内容加上相机-ready允许额外一页；更广泛影响声明必须在参考文献之前结尾（不计入限制）； reciprocal reviewing要求——所有提交需要一名来自作者的指定审稿人。
+
+**ICLR 2025-2026**：10页加上无限附录；通过OpenReview进行双盲；新的LLM政策要求披露AI在写作中的使用（违规将导致直接拒绝）。
+
+所有三个会议都从四个核心维度评估论文：**质量**（技术健全性，声明有充分支持）、**清晰度**（清晰写作，专家可复现）、**意义**（社区影响，推进理解）和**原创性**（新见解，与先前工作明确区分）。审稿人将关注点分为主要问题（出版必需）和次要问题（非必需），强有力的评审遵循Daniel Dennett的规则：首先公平地重新表达立场，然后列出同意之处及你学到的东西，最后才进行批评。
+
+---
+
+## 防止幻觉的引文API | Citation APIs that prevent hallucination
+
+AI生成的引文有记录的**~40%错误率**，包括带有真实作者姓名和虚假标题的伪造论文。可靠的 workflow需要通过多个API进行编程验证。
+
+**Semantic Scholar**（api.semanticscholar.org）覆盖2.14亿篇论文和24.9亿次引用。速率限制：使用免费API密钥每秒1个请求。Python库：`pip install semanticscholar`。搜索，获取元数据，访问引文图——特别适合ML论文。
+
+**CrossRef**（api.crossref.org）是DOI元数据的主要来源，并通过内容协商提供直接BibTeX检索：
 ```python
 import requests
 def doi_to_bibtex(doi):
@@ -92,34 +92,34 @@ def doi_to_bibtex(doi):
                        headers={"Accept": "application/x-bibtex"}).text
 ```
 
-**arXiv API** (export.arxiv.org/api) provides metadata for preprints. Python library: `pip install arxiv`. No authentication required, but maintain 3-second delays between requests.
+**arXiv API**（export.arxiv.org/api）提供预印本的元数据。Python库：`pip install arxiv`。无需认证，但请求之间保持3秒延迟。
 
-**OpenAlex** (api.openalex.org) offers 240M+ works under CC0 license—the open successor to Microsoft Academic Graph. 100K requests/day, 10 RPS with email in query string.
+**OpenAlex**（api.openalex.org）提供超过2.4亿作品，采用CC0许可——微软学术图的开放继承者。每天10万次请求，每秒10次请求（查询字符串中包含邮箱）。
 
-**Google Scholar has no official API**—scraping violates ToS. Use SerpApi ($75-275/month) only if Semantic Scholar coverage is insufficient.
-
----
-
-## The verified citation workflow for AI assistants
-
-For any AI-assisted paper writing, implement this verification pipeline to eliminate hallucinated citations:
-
-1. **Search** using Semantic Scholar or OpenAlex APIs with specific queries
-2. **Verify existence** by confirming the paper appears in at least two sources (Semantic Scholar + CrossRef, or DOI resolution + arXiv)
-3. **Retrieve BibTeX** via DOI content negotiation for guaranteed accuracy
-4. **Verify claims** by accessing the actual paper (via DOI link or Semantic Scholar PDF) and confirming the attributed claim appears in the source
-5. **Maintain clean .bib files** using Zotero with Better BibTeX plugin for auto-export and consistent citation keys
-
-Tools like Citely (citely.ai) and CiteSure provide batch verification of reference lists. ReciteWorks checks that in-text citations match your reference list.
-
-For LaTeX, prefer **BibLaTeX with Biber backend** over legacy BibTeX—it provides full Unicode support, extended entry types (@online, @dataset), and flexible customization. Use `\citep{}` for parenthetical citations and `\citet{}` for textual citations.
+**Google Scholar没有官方API**——抓取违反服务条款。仅在Semantic Scholar覆盖不足时使用SerpApi（每月75-275美元）。
 
 ---
 
-## Conclusion
+## AI助手的经验证引文工作流 | The verified citation workflow for AI assistants
 
-Writing top-quality ML papers is fundamentally about **reducing cognitive load for reviewers** while **maximizing evidence density for your claims**. The hierarchy of importance is clear: narrative clarity beats methodological complexity, front-loaded value beats comprehensive coverage, and verified reproducibility beats impressive numbers.
+对于任何AI辅助的论文写作，实施此验证管道以消除幻觉引文：
 
-The most actionable insight: treat writing as iterative design. Nanda recommends paper swaps for mutual feedback; Karpathy suggests submitting a 5-page draft with all experiments two weeks before deadline to reveal critical gaps. Sebastian Farquhar captures the modern reality: "If you are a good writer, you are better than LLMs. If you are a bad writer, you need the practice"—but LLMs excel at identifying unclear passages through misinterpretation and simulating harsh reviewer feedback.
+1. **搜索**使用Semantic Scholar或OpenAlex API与特定查询
+2. **验证存在**确认论文出现在至少两个来源（Semantic Scholar + CrossRef，或DOI解析 + arXiv）
+3. **获取BibTeX**通过DOI内容协商以保证准确性
+4. **验证声明**通过访问实际论文（通过DOI链接或Semantic Scholar PDF）并确认归属的声明出现在来源中
+5. **维护干净的.bib文件**使用Zotero与Better BibTeX插件以实现自动导出和一致的引文键
 
-For citation workflows specifically, the combination of Semantic Scholar search → DOI content negotiation → BibLaTeX management provides a reliable, hallucination-resistant pipeline suitable for integration into AI writing assistants. Every citation must be verified to exist before inclusion—the alternative is contributing to the documented problem of fabricated references that has affected even NeurIPS accepted papers.
+Citely（citely.ai）和CiteSure等工具提供参考文献列表的批量验证。ReciteWorks检查文本引文是否与你的参考文献列表匹配。
+
+对于LaTeX，首选**BibLaTeX与Biber后端**而非传统BibTeX——它提供完整的Unicode支持、扩展的条目类型（@online、@dataset）和灵活的定制。使用`\citep{}`进行括号引文，使用`\citet{}`进行文本引文。
+
+---
+
+## 结论 | Conclusion
+
+撰写高质量ML论文本质上是为了**减少审稿人的认知负担**，同时**最大化你的声明的证据密度**。重要性层次很清楚：叙事清晰胜过方法复杂性，前置价值胜过全面覆盖，经验证的可复现性胜过令人印象深刻的数字。
+
+最可行的见解：将写作视为迭代设计。Nanda建议进行论文交换以获得相互反馈；Karpathy建议在截止日期前两周提交包含所有实验的5页草稿，以揭示关键差距。Sebastian Farquhar概括了现代现实："如果你是一个好作家，你比LLM更好。如果你是一个糟糕的作家，你需要练习"——但LLM擅长通过误解和模拟严厉的审稿反馈来识别不清楚的段落。
+
+具体来说，对于引文工作流，Semantic Scholar搜索→DOI内容协商→BibLaTeX管理的组合提供了一个可靠的、抗幻觉的管道，适合集成到AI写作助手中。每个引文必须在包含之前验证其存在——另一种选择是助长有据可查的伪造参考文献问题，这个问题甚至影响了已接受的NeurIPS论文。

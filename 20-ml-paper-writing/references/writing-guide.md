@@ -1,354 +1,350 @@
-# ML Paper Writing Philosophy & Best Practices
+# 机器学习论文写作理念与最佳实践 | ML Paper Writing Philosophy & Best Practices
 
-This reference compiles writing advice from prominent ML researchers including Neel Nanda, Andrej Karpathy, Sebastian Farquhar, Zachary Lipton, and Jacob Steinhardt.
-
----
-
-## Contents
-
-- [The Narrative Principle](#the-narrative-principle)
-- [Time Allocation](#time-allocation)
-- [Abstract Writing Formula](#abstract-writing-formula)
-- [Introduction Structure](#introduction-structure)
-- [Sentence-Level Clarity](#sentence-level-clarity)
-- [Word Choice and Precision](#word-choice-and-precision)
-- [Mathematical Writing](#mathematical-writing)
-- [Figure Design](#figure-design)
-- [Common Mistakes to Avoid](#common-mistakes-to-avoid)
+本文档汇集了包括 Neel Nanda、Andrej Karpathy、Sebastian Farquhar、Zachary Lipton 和 Jacob Steinhardt 在内的知名机器学习研究者的写作建议。
 
 ---
 
-## The Narrative Principle
+## 目录 | Contents
 
-### From Neel Nanda
-
-"A paper is a short, rigorous, evidence-based technical story with a takeaway readers care about."
-
-The narrative rests on three pillars that must be crystal clear by the end of your introduction:
-
-**The "What"**: One to three specific novel claims fitting within a cohesive theme. Vague contributions like "we study X" fail immediately—reviewers need precise, falsifiable claims.
-
-**The "Why"**: Rigorous empirical evidence that convincingly supports those claims, including strong baselines honestly tuned and experiments that distinguish between competing hypotheses rather than merely showing "decent results."
-
-**The "So What"**: Why readers should care, connecting your contribution to problems the community recognizes as important.
-
-### From Andrej Karpathy
-
-"A paper is not a random collection of experiments you report on. The paper sells a single thing that was not obvious or present before. The entire paper is organized around this core contribution with surgical precision."
-
-This applies whether you're presenting a new architecture, a theoretical result, or improved understanding of existing methods—NeurIPS explicitly notes that "originality does not necessarily require an entirely new method."
-
-**Practical Implication**: If you cannot state your contribution in one sentence, you don't yet have a paper. Everything else—experiments, related work, discussion—exists only to support that core claim.
+- [叙事原则 | The Narrative Principle](#the-narrative-principle)
+- [时间分配 | Time Allocation](#time-allocation)
+- [摘要写作公式 | Abstract Writing Formula](#abstract-writing-formula)
+- [引言结构 | Introduction Structure](#introduction-structure)
+- [句子级别清晰度 | Sentence-Level Clarity](#sentence-level-clarity)
+- [用词与精确性 | Word Choice and Precision](#word-choice-and-precision)
+- [数学写作 | Mathematical Writing](#mathematical-writing)
+- [图表设计 | Figure Design](#figure-design)
+- [常见错误与避免 | Common Mistakes to Avoid](#common-mistakes-to-avoid)
+- [提交前检查清单 | Pre-Submission Checklist](#pre-submission-checklist)
 
 ---
 
-## Time Allocation
+## 叙事原则 | The Narrative Principle
 
-### From Neel Nanda
+### 来自 Neel Nanda
 
-Spend approximately **the same amount of time** on each of:
-1. The abstract
-2. The introduction
-3. The figures
-4. Everything else combined
+「论文是一篇简短、严谨、以证据为基础的技术故事，传达读者关心的核心结论。」
 
-This isn't hyperbole—most reviewers form preliminary judgments before reaching your methods section. Readers encounter your paper in a predictable pattern: **title → abstract → introduction → figures → maybe the rest.**
+叙事建立在三个支柱之上，在引言结束时必须清晰明了：
 
-### Reviewer Reading Patterns
+**「是什么」**：一到三个符合统一主题的具体新颖主张。像「我们研究 X」这样模糊的贡献立即失败——审稿人需要精确的、可证伪的主张。
 
-Studies of reviewer behavior show:
-- Abstract is read 100% of the time
-- Introduction is skimmed by 90%+ of reviewers
-- Figures are examined before methods by most reviewers
-- Full methods are read only if interest is established
+**「为什么」**：令人信服地支持这些主张的严格实证证据，包括诚实调优的强大基线，以及区分竞争假设的实验，而不仅仅是展示「还不错的结果」。
 
-**Implication**: Front-load your paper's value. Don't bury the contribution.
+**「那又怎样」**：为什么读者应该关心，将你的贡献与社区公认重要的问题联系起来。
+
+### 来自 Andrej Karpathy
+
+「论文不是对你报告的实验的随机集合。论文推销的是之前不存在或不明显的一样东西。整个论文都以这个核心贡献为中心，精确组织。」
+
+无论你展示的是新架构、理论结果还是对现有方法的改进理解，这都是适用的——NeurIPS 明确指出「原创性不一定需要全新方法」。
+
+**实际意义**：如果你不能用一句话表达你的贡献，你的论文还没有成形。其他一切——实验、相关工作、讨论——都只服务于那个核心主张。
 
 ---
 
-## Abstract Writing Formula
+## 时间分配 | Time Allocation
 
-### Sebastian Farquhar's 5-Sentence Formula
+### 来自 Neel Nanda
 
-1. **What you achieved**: "We introduce...", "We prove...", "We demonstrate..."
-2. **Why this is hard and important**
-3. **How you do it** (with specialist keywords for discoverability)
-4. **What evidence you have**
-5. **Your most remarkable number/result**
+在大约**相同的时间**分配在以下各项：
+1. 摘要
+2. 引言
+3. 图表
+4. 其他所有内容
 
-### Example (Good Abstract)
+这不是夸张——大多数审稿人在到达你的方法部分之前就形成了初步判断。读者以可预测的顺序阅读你的论文：**标题 → 摘要 → 引言 → 图表 → 可能的其他部分。**
+
+### 审稿人阅读模式
+
+审稿人行为研究表明：
+- 摘要 100% 被阅读
+- 90%+ 的审稿人会浏览引言
+- 大多数审稿人在方法之前查看图表
+- 只有在建立兴趣后才会阅读完整方法
+
+**含义**：将论文的价值前置。不要埋没贡献。
+
+---
+
+## 摘要写作公式 | Abstract Writing Formula
+
+### Sebastian Farquhar 的 5 句公式
+
+1. **你取得的成果**：「我们提出……」「我们证明……」「我们展示……」
+2. **为什么这既困难又重要**
+3. **你是如何做到的**（使用专业关键词以便发现）
+4. **你有什么证据**
+5. **你最突出的数字/结果**
+
+### 示例（良好的摘要）
 
 ```
-We prove that gradient descent on overparameterized neural networks
-converges to global minima at a linear rate. [What]
-This resolves a fundamental question about why deep learning works
-despite non-convex optimization landscapes. [Why hard/important]
-Our proof relies on showing that the Neural Tangent Kernel remains
-approximately constant during training, reducing the problem to
-kernel regression. [How with keywords]
-We validate our theory on CIFAR-10 and ImageNet, showing that
-predicted convergence rates match experiments within 5%. [Evidence]
-This is the first polynomial-time convergence guarantee for
-networks with practical depth and width. [Remarkable result]
+我们证明了过参数化神经网络的梯度下降以线性速率收敛到全局最优。[是什么]
+这解决了一个关于深度学习为何有效的基础问题，尽管优化景观是非凸的。[为什么困难/重要]
+我们的证明依赖于表明神经切核在训练过程中保持近似恒定，将问题简化为核回归。[如何做，包含关键词]
+我们在 CIFAR-10 和 ImageNet 上验证了我们的理论，表明预测的收敛率与实验结果在 5% 以内匹配。[证据]
+这是首次为具有实际深度和宽度的网络提供多项式时间收敛保证。[突出的结果]
 ```
 
-### What to Avoid
+### 应避免的内容
 
-From Zachary Lipton: "If the first sentence can be pre-pended to any ML paper, delete it."
+来自 Zachary Lipton：「如果第一句话可以添加到任何机器学习论文前面，就删除它。」
 
-**Delete these openings**:
-- "Large language models have achieved remarkable success..."
-- "Deep learning has revolutionized..."
-- "In recent years, neural networks have..."
+**删除这些开头**：
+- 「大型语言模型取得了显著成功……」
+- 「深度学习已经革新了……」
+- 「近年来，神经网络……」
 
-**Start with your specific contribution instead.**
+**改为从你的具体贡献开始。**
 
 ---
 
-## Introduction Structure
+## 引言结构 | Introduction Structure
 
-### Requirements
+### 要求
 
-- **1-1.5 pages maximum** (in two-column format)
-- **Methods should start by page 2-3**
-- Must include **2-4 bullet contribution list** (max 1-2 lines each)
+- **最多 1-1.5 页**（双栏格式）
+- **方法部分应在第 2-3 页开始**
+- 必须包含 **2-4 点贡献列表**（每点最多 1-2 行）
 
-### Structure Template
+### 结构模板
 
 ```markdown
-1. Opening Hook (2-3 sentences)
-   - State the problem your paper addresses
-   - Why it matters RIGHT NOW
+1. 开场钩子（2-3 句话）
+   - 阐述论文解决的问题
+   - 为什么它现在很重要
 
-2. Background/Challenge (1 paragraph)
-   - What makes this problem hard?
-   - What have others tried? Why is it insufficient?
+2. 背景/挑战（1 段）
+   - 是什么让这个问题困难？
+   - 其他人尝试过什么？为什么还不够？
 
-3. Your Approach (1 paragraph)
-   - What do you do differently?
-   - Key insight that enables your contribution
+3. 你的方法（1 段）
+   - 你做了什么不同的事？
+   - 促成你贡献的关键洞察
 
-4. Contribution Bullets (2-4 items)
-   - Be specific and falsifiable
-   - Each bullet: 1-2 lines maximum
+4. 贡献要点（2-4 项）
+   - 要具体且可证伪
+   - 每点最多 1-2 行
 
-5. Results Preview (2-3 sentences)
-   - Most impressive numbers
-   - Scope of evaluation
+5. 结果预览（2-3 句话）
+   - 最令人印象深刻的数字
+   - 评估范围
 
-6. Paper Organization (optional, 1-2 sentences)
-   - "Section 2 presents... Section 3 describes..."
+6. 论文组织（可选，1-2 句话）
+   - 「第 2 节介绍……第 3 节描述……」
 ```
 
-### Contribution Bullets: Good vs Bad
+### 贡献要点：好的 vs 差的
 
-**Good:**
-- We prove that X converges in O(n log n) time under assumption Y
-- We introduce Z, a 3-layer architecture that reduces memory by 40%
-- We demonstrate that A outperforms B by 15% on benchmark C
+**好的：**
+- 我们证明了 X 在假设 Y 下以 O(n log n) 时间收敛
+- 我们引入了 Z，一种将内存减少 40% 的 3 层架构
+- 我们展示了 A 在基准 C 上比 B 优 15%
 
-**Bad:**
-- We study the problem of X (not a contribution)
-- We provide extensive experiments (too vague)
-- We make several contributions to the field (says nothing)
+**差的：**
+- 我们研究了 X 问题（不是贡献）
+- 我们进行了大量实验（太模糊）
+- 我们对该领域做出了多项贡献（什么都没说）
 
 ---
 
-## Sentence-Level Clarity
+## 句子级别清晰度 | Sentence-Level Clarity
 
-### From Gopen & Swan: "The Science of Scientific Writing"
+### 来自 Gopen & Swan：《科学写作的科学》
 
-The seminal 1990 paper by George Gopen and Judith Swan establishes that **readers have structural expectations** about where information appears in prose. Violating these expectations forces readers to spend energy on structure rather than content.
+George Gopen 和 Judith Swan 1990 年的开创性论文指出，**读者对信息在文中出现的位置有结构性期望**。违反这些期望会使读者把精力花在结构上而不是内容上。
 
-> "If the reader is to grasp what the writer means, the writer must understand what the reader needs."
+> 「如果作者想让读者理解其意思，作者必须了解读者需要什么。」
 
-#### The 7 Principles of Reader Expectations
+#### 读者期望的 7 项原则
 
-**Principle 1: Subject-Verb Proximity**
+**原则 1：主语动词临近原则**
 
-Keep grammatical subject and verb close together. Anything intervening reads as interruption of lesser importance.
+将语法主语和动词放在一起。任何插入的内容都会被读作次要干扰。
 
-**Weak**: "The model, which was trained on 100M tokens and fine-tuned on domain-specific data using LoRA with rank 16, achieves state-of-the-art results"
+**弱**：「该模型在 1 亿标记上训练并使用秩为 16 的 LoRA 在领域特定数据上进行微调，取得了最先进的结果」
 
-**Strong**: "The model achieves state-of-the-art results after training on 100M tokens and fine-tuning with LoRA (rank 16)"
+**强**：「该模型在 1 亿标记上训练并使用 LoRA（秩 16）微调后，取得了最先进的结果」
 
-**Principle 2: Stress Position (Save the Best for Last)**
+**原则 2：强调位置（把最好的留到最后）**
 
-Readers naturally emphasize the **last words of a sentence**. Place your most important information there.
+读者自然强调**句子的最后部分**。把最重要的信息放在那里。
 
-**Weak**: "Accuracy improves by 15% when using attention"
-**Strong**: "When using attention, accuracy improves by **15%**"
+**弱**：「使用注意力时，准确率提升了 15%」
+**强**：「使用注意力时，准确率提升了 **15%**」
 
-**Principle 3: Topic Position (First Things First)**
+**原则 3：主题位置（先说先说）**
 
-The beginning of a sentence establishes perspective. Put the "whose story" element first—readers expect the sentence to be about whoever shows up first.
+句子的开头建立视角。把「主角」放在最前面——读者期望句子是关于最先出现的那个。
 
-**Weak**: "A novel attention mechanism that computes alignment scores is introduced"
-**Strong**: "To address the alignment problem, we introduce a novel attention mechanism"
+**弱**：「引入了一种计算对齐分数的新型注意力机制」
+**强**：「为了解决对齐问题，我们引入了一种新型注意力机制」
 
-**Principle 4: Old Information Before New**
+**原则 4：旧信息在前，新信息在后**
 
-Put familiar information (old) in the topic position for backward linkage; put new information in the stress position for emphasis.
+将熟悉的信息（旧信息）放在主题位置以实现向后连接；将新信息放在强调位置以示强调。
 
-**Weak**: "Sparse attention was introduced by Child et al. The quadratic complexity of standard attention motivates this work."
-**Strong**: "Standard attention has quadratic complexity. To address this, Child et al. introduced sparse attention."
+**弱**：「Child 等人引入了稀疏注意力。标准注意力的二次复杂度促使了这项工作。」
+**强**：「标准注意力具有二次复杂度。为了解决这个问题，Child 等人引入了稀疏注意力。」
 
-**Principle 5: One Unit, One Function**
+**原则 5：每个单元一个功能**
 
-Each unit of discourse (sentence, paragraph, section) should serve a single function. If you have two points, use two units.
+每个话语单元（句子、段落、章节）应该只服务一个功能。如果有两点，用两个单元。
 
-**Principle 6: Articulate Action in the Verb**
+**原则 6：用动词表达动作**
 
-Express the action of each sentence in its verb, not in nominalized nouns.
+用动词而不是名词化形式来表达每个句子的动作。
 
-**Weak**: "We performed an analysis of the results" (nominalization)
-**Strong**: "We analyzed the results" (action in verb)
+**弱**：「我们对结果进行了分析」（名词化）
+**强**：「我们分析了结果」（动作在动词中）
 
-**Principle 7: Context Before New Information**
+**原则 7：新信息前先给背景**
 
-Provide context before asking the reader to consider anything new. This applies at all levels—sentence, paragraph, section.
+在要求读者考虑新信息之前先提供背景。这适用于所有层级——句子、段落、章节。
 
-**Weak**: "Equation 3 shows that convergence is guaranteed when the learning rate satisfies..."
-**Strong**: "For convergence to be guaranteed, the learning rate must satisfy the condition in Equation 3..."
+**弱**：「公式 3 表明当学习率满足……时收敛得到保证」
+**强**：「为保证收敛，学习率必须满足公式 3 中的条件……」
 
-#### Summary Table
+#### 总结表
 
-| Principle | Rule | Mnemonic |
+| 原则 | 规则 | 助记符 |
 |-----------|------|----------|
-| Subject-Verb Proximity | Keep subject and verb close | "Don't interrupt yourself" |
-| Stress Position | Emphasis at sentence end | "Save the best for last" |
-| Topic Position | Context at sentence start | "First things first" |
-| Old Before New | Familiar → unfamiliar | "Build on known ground" |
-| One Unit, One Function | Each paragraph = one point | "One idea per container" |
-| Action in Verb | Use verbs, not nominalizations | "Verbs do, nouns sit" |
-| Context Before New | Explain before presenting | "Set the stage first" |
+| 主语动词临近 | 保持主语和动词靠近 | 「不要打断自己」 |
+| 强调位置 | 句子末尾强调 | 「把最好的留到最后」 |
+| 主题位置 | 句子开头给背景 | 「先说先说」 |
+| 旧前新后 | 熟悉 → 陌生 | 「在已知基础上建立」 |
+| 一单元一功能 | 每段一个观点 | 「一个容器一个想法」 |
+| 动作在动词 | 用动词，不用名词化 | 「动词做事，名词坐着」 |
+| 背景在新前 | 展示前先解释 | 「先搭台再唱戏」 |
 
 ---
 
 ---
 
-## Micro-Level Writing Tips
+## 微观层面写作技巧 | Micro-Level Writing Tips
 
-### From Ethan Perez (Anthropic)
+### 来自 Ethan Perez (Anthropic)
 
-These practical micro-level tips improve clarity at the sentence and word level.
+这些实用的微观层面技巧可以提高句子和单词层面的清晰度。
 
-#### Pronoun Management
+#### 代词管理
 
-**Minimize pronouns** ("this," "it," "these," "that"). When pronouns are necessary, use them as adjectives with a noun:
+**尽量少用代词**（「这个」「它」「这些」「那个」）。如果必须使用代词，用作形容词的修饰语加名词：
 
-**Weak**: "This shows that the model converges."
-**Strong**: "This result shows that the model converges."
+**弱**：「这表明模型收敛。」
+**强**：「这个结果表明模型收敛。」
 
-**Weak**: "It improves performance."
-**Strong**: "This modification improves performance."
+**弱**：「它提升了性能。」
+**强**：「这个修改提升了性能。」
 
-#### Verb Placement
+#### 动词位置
 
-**Position verbs early** in sentences for better parsing:
+**把动词放在句子前面**以便更好地解析：
 
-**Weak**: "The gradient, after being computed and normalized, updates the weights."
-**Strong**: "The gradient updates the weights after being computed and normalized."
+**弱**：「梯度在计算和归一化之后更新权重。」
+**强**：「梯度在计算和归一化之后更新权重。」
 
-#### Apostrophe Unfolding
+#### 所有格展开
 
-Transform possessive constructions for clarity:
+将所有格结构展开以提高清晰度：
 
-**Original**: "X's Y" → **Unfolded**: "The Y of X"
+**原文**：「X 的 Y」→ **展开**：「X 的 Y」
 
-**Before**: "The model's accuracy on the test set"
-**After**: "The accuracy of the model on the test set"
+**前**：「模型在测试集上的准确率」
+**后**：「模型在测试集上的准确率」
 
-This isn't always better, but when sentences feel awkward, try unfolding.
+这并不总是更好，但当句子感觉不自然时，尝试展开。
 
-#### Words to Eliminate
+#### 应删除的词汇
 
-Delete these filler words in almost all cases:
-- "actually"
-- "a bit"
-- "fortunately" / "unfortunately"
-- "very" / "really"
-- "quite"
-- "basically"
-- "essentially"
-- Excessive connectives ("however," "moreover," "furthermore" when not needed)
+在几乎所有情况下删除这些填充词：
+- 「实际上」
+- 「有点」
+- 「幸运地」/「不幸地」
+- 「非常」/「真的」
+- 「相当」
+- 「基本上」
+- 「本质上」
+- 过多的连接词（「然而」「此外」「进一步」在不需要时）
 
-#### Sentence Construction Rules
+#### 句子构造规则
 
-1. **One idea per sentence** - If struggling to express an idea in one sentence, it needs two
-2. **No repeated sounds** - Avoid similar-sounding words in the same sentence
-3. **Every sentence adds information** - Delete sentences that merely restate
-4. **Active voice always** - Specify the actor ("We find..." not "It is found...")
-5. **Expand contractions** - "don't" → "do not" for formality
+1. **每句一个想法**——如果难以在一句话中表达一个想法，需要两句
+2. **避免重复发音**——避免同一句子中出现发音相似的词
+3. **每句话都要增加信息**——删除只是重复的句子
+4. **始终使用主动语态**——指明行动者（「我们发现……」而不是「被发现……」）
+5. **展开缩写**——为正式起见，「don't」→「do not」
 
-#### Paragraph Architecture
+#### 段落结构
 
-- **First sentence**: State the point clearly
-- **Middle sentences**: Support with evidence
-- **Last sentence**: Reinforce or transition
+- **第一句**：清晰陈述观点
+- **中间句子**：用证据支持
+- **最后一句**：强化或过渡
 
-Don't bury key information in the middle of paragraphs.
+不要把关键信息埋在段落中间。
 
 ---
 
-## Word Choice and Precision
+## 用词与精确性 | Word Choice and Precision
 
-### From Zachary Lipton
+### 来自 Zachary Lipton
 
-**Eliminate hedging** unless genuine uncertainty exists:
-- Delete "may" and "can" unless necessary
-- "provides *very* tight approximation" drips with insecurity
-- "provides tight approximation" is confident
+**消除模糊表达**，除非存在真正的不确定性：
+- 删除「可能」和「可以」，除非必要
+- 「提供*非常*紧的近似」充满不安全感
+- 「提供*非常*紧的近似」充满不安全感
+- 「提供紧密的近似」充满自信
 
-**Avoid vacuous intensifiers**:
-- Delete: very, extremely, highly, significantly (unless statistical)
-- These words signal insecurity, not strength
+**避免空洞的强调词**：
+- 删除：非常、极其、高度、显著（除非是统计意义上的）
+- 这些词表示不安全感，而不是力量。
 
-### From Jacob Steinhardt
+### 来自 Jacob Steinhardt
 
-**Precision over brevity**: Replace vague terms with specific ones.
+**精确胜于简洁**：用具体的词替换模糊的词。
 
-| Vague | Specific |
+| 模糊 | 具体 |
 |-------|----------|
-| performance | accuracy, latency, throughput |
-| improves | increases accuracy by X%, reduces latency by Y |
-| large | 1B parameters, 100M tokens |
-| fast | 3x faster, 50ms latency |
-| good results | 92% accuracy, 0.85 F1 |
+| 性能 | 准确率、延迟、吞吐量 |
+| 提升 | 准确率提升 X%、延迟降低 Y |
+| 大型 | 10 亿参数、1 亿标记 |
+| 快速 | 快 3 倍、50 毫秒延迟 |
+| 良好结果 | 92% 准确率、0.85 F1 |
 
-**Consistent terminology**: Referring to the same concept with different terms creates confusion.
+**一致的术语**：用不同的术语指代同一概念会造成混淆。
 
-**Choose one and stick with it**:
-- "model" vs "network" vs "architecture"
-- "training" vs "learning" vs "optimization"
-- "sample" vs "example" vs "instance"
+**选择一个并坚持使用**：
+- 「模型」vs「网络」vs「架构」
+- 「训练」vs「学习」vs「优化」
+- 「样本」vs「例子」vs「实例」
 
-### Vocabulary Signaling
+### 词汇信号
 
-**Avoid words signaling incremental work**:
-- Never: "combine," "modify," "expand," "extend"
-- Instead: "develop," "propose," "introduce"
+**避免表示渐进式工作的词**：
+- 永远不要：「结合」「修改」「扩展」「延伸」
+- 改为：「开发」「提出」「引入」
 
-**Why**: "We combine X and Y" sounds like you stapled two existing ideas together. "We develop a method that leverages X for Y" sounds like genuine contribution.
+**为什么**：「我们结合 X 和 Y」听起来像是把两个现有想法钉在一起。「我们开发了一种利用 X 进行 Y 的方法」听起来像是真正的贡献。
 
 ---
 
-## Mathematical Writing
+## 数学写作 | Mathematical Writing
 
-### From Ethan Perez
+### 来自 Ethan Perez
 
-**Unfold apostrophes** for clarity:
-- Weak: "X's Y"
-- Strong: "The Y of X"
+**为清晰起见展开所有格**：
+- 弱：「X 的 Y」
+- 强：「Y of X」
 
-Example: "the model's accuracy" → "the accuracy of the model"
+示例：「模型的准确率」→「准确率 of the model」
 
-### General Principles
+### 一般原则
 
-1. **State all assumptions formally** before theorems
-2. **Provide intuitive explanations** alongside proofs
-3. **Use consistent notation** throughout the paper
-4. **Define symbols at first use**
+1. **在定理前正式陈述所有假设**
+2. **在证明旁提供直观解释**
+3. **在整个论文中使用一致的符号**
+4. **首次使用时定义符号**
 
 ### Notation Conventions
 
@@ -371,106 +367,106 @@ $\mathrm{softmax}$, $\mathrm{ReLU}$
 
 ---
 
-## Figure Design
+## 图表设计 | Figure Design
 
-### From Neel Nanda
+### 来自 Neel Nanda
 
-Figures should tell a coherent story even if the reader skips the text. Many readers DO skip the text initially.
+图表应该讲述一个连贯的故事，即使读者跳过文字。许多读者最初确实会跳过文字。
 
-### Design Principles
+### 设计原则
 
-1. **Figure 1 is crucial**: Often the first thing readers examine after abstract
-2. **Self-contained captions**: Reader should understand figure without main text
-3. **No title inside figure**: The caption serves this function (ICML/NeurIPS rule)
-4. **Vector graphics**: PDF/EPS for plots, PNG (600 DPI) only for photographs
+1. **图 1 至关重要**：通常是读者在摘要之后查看的第一个内容
+2. **自包含的图注**：读者应该能够在不看正文的情况下理解图表
+3. **图表内不要有标题**：图注起到这个作用（ICML/NeurIPS 规则）
+4. **矢量图形**：图表使用 PDF/EPS，仅照片使用 PNG（600 DPI）
 
-### Accessibility Requirements
+### 无障碍要求
 
-8% of men have color vision deficiency. Your figures must work for them.
+8% 的男性有色觉障碍。你的图表必须对他们可用。
 
-**Solutions**:
-- Use colorblind-safe palettes: Okabe-Ito or Paul Tol
-- Avoid red-green combinations
-- Verify figures work in grayscale
-- Use different line styles (solid, dashed, dotted) in addition to colors
+**解决方案**：
+- 使用色盲友好的调色板：Okabe-Ito 或 Paul Tol
+- 避免红绿组合
+- 验证图表在灰度模式下可用
+- 除了颜色之外，使用不同的线型（实线、虚线、点线）
 
-### Tools
+### 工具
 
 ```python
-# SciencePlots: Publication-ready styles
+# SciencePlots: 出版级样式
 import matplotlib.pyplot as plt
 plt.style.use(['science', 'ieee'])
 
-# Or for Nature-style
+# 或 Nature 风格
 plt.style.use(['science', 'nature'])
 ```
 
 ---
 
-## Common Mistakes to Avoid
+## 常见错误与避免 | Common Mistakes to Avoid
 
-### Structure Mistakes
+### 结构错误
 
-| Mistake | Solution |
+| 错误 | 解决方案 |
 |---------|----------|
-| Introduction too long (>1.5 pages) | Move background to Related Work |
-| Methods buried (after page 3) | Front-load contribution, cut intro |
-| Missing contribution bullets | Add 2-4 specific, falsifiable claims |
-| Experiments without explicit claims | State what each experiment tests |
+| 引言过长（>1.5 页）| 将背景移到相关工作 |
+| 方法埋没（第 3 页之后）| 前置贡献，精简引言 |
+| 缺少贡献要点 | 添加 2-4 个具体、可证伪的主张 |
+| 实验没有明确主张 | 说明每个实验验证什么 |
 
-### Writing Mistakes
+### 写作错误
 
-| Mistake | Solution |
+| 错误 | 解决方案 |
 |---------|----------|
-| Generic abstract opening | Start with your specific contribution |
-| Inconsistent terminology | Choose one term per concept |
-| Passive voice overuse | Use active voice: "We show" not "It is shown" |
-| Hedging everywhere | Be confident unless genuinely uncertain |
+| 通用摘要开头 | 从你的具体贡献开始 |
+| 术语不一致 | 每个概念选择一个术语 |
+| 过度使用被动语态 | 使用主动语态：「我们展示」而不是「被展示」 |
+| 到处模糊表达 | 除非真正不确定，否则要自信 |
 
-### Figure Mistakes
+### 图表错误
 
-| Mistake | Solution |
+| 错误 | 解决方案 |
 |---------|----------|
-| Raster graphics for plots | Use vector (PDF/EPS) |
-| Red-green color scheme | Use colorblind-safe palette |
-| Title inside figure | Put title in caption |
-| Captions require main text | Make captions self-contained |
+| 图表使用光栅图形 | 使用矢量（PDF/EPS） |
+| 红绿配色方案 | 使用色盲友好调色板 |
+| 图表内有标题 | 把标题放在图注中 |
+| 图注需要正文 | 使图注自包含 |
 
-### Citation Mistakes
+### 引用错误
 
-| Mistake | Solution |
+| 错误 | 解决方案 |
 |---------|----------|
-| Paper-by-paper Related Work | Organize methodologically |
-| Missing relevant citations | Reviewers authored papers—cite generously |
-| AI-generated citations | Always verify via APIs |
-| Inconsistent citation format | Use BibLaTeX with consistent keys |
+| 逐篇相关工作 | 按方法论组织 |
+| 缺少相关引用 | 审稿人写了论文——慷慨引用 |
+| AI 生成的引用 | 始终通过 API 验证 |
+| 引用格式不一致 | 使用一致的 BibLaTeX 键 |
 
 ---
 
-## Pre-Submission Checklist
+## 提交前检查清单 | Pre-Submission Checklist
 
-Before submitting, verify:
+提交前验证：
 
-**Narrative**:
-- [ ] Can state contribution in one sentence
-- [ ] Three pillars (What/Why/So What) clear in intro
-- [ ] Every experiment supports a specific claim
+**叙事**：
+- [ ] 能用一句话表达贡献
+- [ ] 引言中三支柱（是什么/为什么/那又怎样）清晰
+- [ ] 每个实验都支持一个具体主张
 
-**Structure**:
-- [ ] Abstract follows 5-sentence formula
-- [ ] Introduction ≤1.5 pages
-- [ ] Methods start by page 2-3
-- [ ] 2-4 contribution bullets included
-- [ ] Limitations section present
+**结构**：
+- [ ] 摘要遵循 5 句公式
+- [ ] 引言 ≤1.5 页
+- [ ] 方法从第 2-3 页开始
+- [ ] 包含 2-4 个贡献要点
+- [ ] 包含局限性部分
 
-**Writing**:
-- [ ] Consistent terminology throughout
-- [ ] No generic opening sentences
-- [ ] Hedging removed unless necessary
-- [ ] All figures have self-contained captions
+**写作**：
+- [ ] 全文术语一致
+- [ ] 没有通用的开头句子
+- [ ] 删除不必要的模糊表达
+- [ ] 所有图表都有自包含的图注
 
-**Technical**:
-- [ ] All citations verified via API
-- [ ] Error bars included with methodology
-- [ ] Compute resources documented
-- [ ] Code/data availability stated
+**技术**：
+- [ ] 所有引用通过 API 验证
+- [ ] 方法包含误差线
+- [ ] 记录计算资源
+- [ ] 说明代码/数据可用性

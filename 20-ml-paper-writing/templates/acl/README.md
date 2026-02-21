@@ -1,6 +1,6 @@
-# *ACL Paper Styles
+# *ACL论文样式 | *ACL Paper Styles
 
-This directory contains the latest LaTeX templates for *ACL conferences.
+此目录包含*ACL会议的最新LaTeX模板。
 
 ## Instructions for authors
 
@@ -23,7 +23,7 @@ conferences:
 Authors may not modify these style files or use templates designed for
 other conferences.
 
-## Instructions for publications chairs
+## 出版物主席说明 | Instructions for publications chairs
 
 To adapt the style files for your conference, please fork this repository and
 make necessary changes. Minimally, you'll need to update the name of
@@ -40,7 +40,7 @@ is now possible to do this stamping automatically within
 START. Currently, the way to do this is for the program chair to email
 support@softconf.com and request it.
 
-## Instructions for making changes to style files
+## 更改样式文件的说明 | Instructions for making changes to style files
 
 - merge pull request in github, or push to github
 - git pull from github to a local repository
