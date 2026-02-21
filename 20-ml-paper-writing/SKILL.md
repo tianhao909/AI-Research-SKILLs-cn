@@ -295,60 +295,65 @@ Every successful ML paper centers on what Neel Nanda calls "the narrative": a sh
 
 ---
 
-## Paper Structure Workflow
+## 论文结构工作流 | Paper Structure Workflow
 
-### Workflow 1: Writing a Complete Paper (Iterative)
+### 工作流 1：撰写完整论文（迭代）
 
 Copy this checklist and track progress. **Each step involves drafting → feedback → revision:**
 
 ```
-Paper Writing Progress:
-- [ ] Step 1: Define the one-sentence contribution (with scientist)
-- [ ] Step 2: Draft Figure 1 → get feedback → revise
-- [ ] Step 3: Draft abstract → get feedback → revise
-- [ ] Step 4: Draft introduction → get feedback → revise
-- [ ] Step 5: Draft methods → get feedback → revise
-- [ ] Step 6: Draft experiments → get feedback → revise
-- [ ] Step 7: Draft related work → get feedback → revise
-- [ ] Step 8: Draft limitations → get feedback → revise
-- [ ] Step 9: Complete paper checklist (required)
-- [ ] Step 10: Final review cycle and submission
+论文写作进度 | Paper Writing Progress:
+- [ ] 步骤 1：定义一句话贡献（与科学家一起） | Step 1: Define the one-sentence contribution (with scientist)
+- [ ] 步骤 2：起草图 1 → 获取反馈 → 修改 | Step 2: Draft Figure 1 → get feedback → revise
+- [ ] 步骤 3：起草摘要 → 获取反馈 → 修改 | Step 3: Draft abstract → get feedback → revise
+- [ ] 步骤 4：起草引言 → 获取反馈 → 修改 | Step 4: Draft introduction → get feedback → revise
+- [ ] 步骤 5：起草方法 → 获取反馈 → 修改 | Step 5: Draft methods → get feedback → revise
+- [ ] 步骤 6：起草实验 → 获取反馈 → 修改 | Step 6: Draft experiments → get feedback → revise
+- [ ] 步骤 7：起草相关工作 → 获取反馈 → 修改 | Step 7: Draft related work → get feedback → revise
+- [ ] 步骤 8：起草局限性 → 获取反馈 → 修改 | Step 8: Draft limitations → get feedback → revise
+- [ ] 步骤 9：完成论文清单（必需） | Step 9: Complete paper checklist (required)
+- [ ] 步骤 10：最终审查周期和提交 | Step 10: Final review cycle and submission
 ```
 
-**Step 1: Define the One-Sentence Contribution**
+**步骤 1：定义一句话贡献 | Step 1: Define the One-Sentence Contribution**
 
-**This step requires explicit confirmation from the scientist.**
+**此步骤需要科学家的明确确认。**
 
 Before writing anything, articulate and verify:
-- What is the single thing your paper contributes?
-- What was not obvious or present before your work?
+- 你的论文贡献的单一事情是什么？
+- 在你的工作之前，什么是不明显或不存在的？
 
-> "I propose framing the contribution as: '[one sentence]'. Does this capture
-> what you see as the main takeaway? Should we adjust the emphasis?"
+> "我建议将贡献框定为：'[一句话]'。这捕捉到了你想要的主要结论吗？我们应该调整重点吗？"
 
-**Step 2: Draft Figure 1**
+**步骤 2：起草图 1 | Step 2: Draft Figure 1**
+
+图 1值得特别关注——许多读者会直接跳过它。
 
 Figure 1 deserves special attention—many readers skip directly to it.
-- Convey core idea, approach, or most compelling result
-- Use vector graphics (PDF/EPS for plots)
-- Write captions that stand alone without main text
-- Ensure readability in black-and-white (8% of men have color vision deficiency)
+- 传达核心思想、方法或最引人注目的结果
+- 使用矢量图形（图表用 PDF/EPS）
+- 编写独立于正文的说明文字
+- 确保黑白可读性（8% 的男性有色觉缺陷）
 
-**Step 3: Write Abstract (5-Sentence Formula)**
+**步骤 3：撰写摘要（5 句话公式） | Step 3: Write Abstract (5-Sentence Formula)**
+
+来自 Sebastian Farquhar (DeepMind)：
 
 From Sebastian Farquhar (DeepMind):
 
 ```
-1. What you achieved: "We introduce...", "We prove...", "We demonstrate..."
-2. Why this is hard and important
-3. How you do it (with specialist keywords for discoverability)
-4. What evidence you have
-5. Your most remarkable number/result
+1. 你实现了什么："我们介绍..."，"我们证明..."，"我们展示..."
+2. 为什么这很难且重要
+3. 你如何实现它（包含专业术语以提高可发现性）
+4. 你有什么证据
+5. 你最杰出的数字/结果
 ```
+
+**删除**通用开场白，如"大型语言模型已经取得了显著成功..."
 
 **Delete** generic openings like "Large language models have achieved remarkable success..."
 
-**Step 4: Write Introduction (1-1.5 pages max)**
+**步骤 4：撰写引言（最多 1-1.5 页） | Step 4: Write Introduction (1-1.5 pages max)****
 
 Must include:
 - 2-4 bullet contribution list (max 1-2 lines each in two-column format)
