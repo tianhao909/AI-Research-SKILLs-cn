@@ -8,54 +8,66 @@ tags: [Academic Writing, NeurIPS, ICML, ICLR, ACL, AAAI, COLM, LaTeX, Paper Writ
 dependencies: [semanticscholar, arxiv, habanero, requests]
 ---
 
-# ML Paper Writing for Top AI Conferences
+# 顶级 AI 会议的机器学习论文写作 | ML Paper Writing for Top AI Conferences
+
+针对 **NeurIPS、ICML、ICLR、ACL、AAAI 和 COLM** 的出版级论文写作专家级指导。本技能结合了顶尖研究者（Nanda、Farquhar、Karpathy、Lipton、Steinhardt）的写作理念与实用工具：LaTeX 模板、引用验证 API 和会议清单。
 
 Expert-level guidance for writing publication-ready papers targeting **NeurIPS, ICML, ICLR, ACL, AAAI, and COLM**. This skill combines writing philosophy from top researchers (Nanda, Farquhar, Karpathy, Lipton, Steinhardt) with practical tools: LaTeX templates, citation verification APIs, and conference checklists.
 
-## Core Philosophy: Collaborative Writing
+## 核心理念：协作式写作 | Core Philosophy: Collaborative Writing
 
-**Paper writing is collaborative, but Claude should be proactive in delivering drafts.**
+**论文写作是协作的，但 Claude 应该主动提供草稿。**
 
 The typical workflow starts with a research repository containing code, results, and experimental artifacts. Claude's role is to:
 
-1. **Understand the project** by exploring the repo, results, and existing documentation
-2. **Deliver a complete first draft** when confident about the contribution
-3. **Search literature** using web search and APIs to find relevant citations
-4. **Refine through feedback cycles** when the scientist provides input
-5. **Ask for clarification** only when genuinely uncertain about key decisions
+1. **理解项目**：探索仓库、结果和现有文档
+2. **提供完整初稿**：当对贡献有信心时
+3. **搜索文献**：使用网络搜索和 API 查找相关引用
+4. **通过反馈循环完善**：当科学家提供输入时
+5. **仅在真正不确定关键决策时请求澄清**
 
-**Key Principle**: Be proactive. If the repo and results are clear, deliver a full draft. Don't block waiting for feedback on every section—scientists are busy. Produce something concrete they can react to, then iterate based on their response.
+**关键原则**：要主动。如果仓库和结果清晰，就提供完整草稿。不要阻塞等待每个部分的反馈——科学家很忙。提供一些具体的东西让他们回应，然后根据他们的反馈迭代。
 
 ---
 
-## ⚠️ CRITICAL: Never Hallucinate Citations
+## ⚠️ 关键：绝不捏造引用 | CRITICAL: Never Hallucinate Citations
 
-**This is the most important rule in academic writing with AI assistance.**
+**这是 AI 辅助学术写作中最重要的规则。**
 
-### The Problem
+### 问题 | The Problem
+AI 生成的引用有 **约 40% 的错误率**。捏造的参考文献（不存在的论文、错误的作者、不正确的年份、伪造的 DOI）是严重的学术不端行为，可能导致直接拒稿或撤稿。
+
 AI-generated citations have a **~40% error rate**. Hallucinated references—papers that don't exist, wrong authors, incorrect years, fabricated DOIs—are a serious form of academic misconduct that can result in desk rejection or retraction.
 
-### The Rule
+### 规则 | The Rule
+**绝不要凭记忆生成 BibTeX 条目。始终通过编程获取。**
+
 **NEVER generate BibTeX entries from memory. ALWAYS fetch programmatically.**
 
-| Action | ✅ Correct | ❌ Wrong |
+| 行动 | ✅ 正确 | ❌ 错误 |
 |--------|-----------|----------|
-| Adding a citation | Search API → verify → fetch BibTeX | Write BibTeX from memory |
-| Uncertain about a paper | Mark as `[CITATION NEEDED]` | Guess the reference |
-| Can't find exact paper | Note: "placeholder - verify" | Invent similar-sounding paper |
+| 添加引用 | 搜索 API → 验证 → 获取 BibTeX | 凭记忆写 BibTeX |
+| 不确定某篇论文 | 标记为 `[CITATION NEEDED]` | 猜测参考文献 |
+| 找不到确切论文 | 注明：“占位符 - 需验证” | 捏造听起来相似的论文 |
 
-### When You Can't Verify a Citation
+### 当无法验证引用时 | When You Can't Verify a Citation
+
+如果无法通过编程验证引用，你**必须**：
 
 If you cannot programmatically verify a citation, you MUST:
 
 ```latex
-% EXPLICIT PLACEHOLDER - requires human verification
-\cite{PLACEHOLDER_author2024_verify_this}  % TODO: Verify this citation exists
+% 明确的占位符 - 需要人工验证
+\cite{PLACEHOLDER_author2024_verify_this}  % TODO: 验证此引用是否存在
 ```
+
+**始终告诉科学家**：“我已将 [X] 个引用标记为需要验证的占位符。我无法确认这些论文是否存在。”
 
 **Always tell the scientist**: "I've marked [X] citations as placeholders that need verification. I could not confirm these papers exist."
 
-### Recommended: Install Exa MCP for Paper Search
+### 推荐：安装 Exa MCP 用于论文搜索 | Recommended: Install Exa MCP for Paper Search
+
+为了最佳的论文搜索体验，安装 **Exa MCP** 提供实时学术搜索：
 
 For the best paper search experience, install **Exa MCP** which provides real-time academic search:
 
