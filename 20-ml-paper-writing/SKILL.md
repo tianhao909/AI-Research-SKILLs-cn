@@ -470,47 +470,51 @@ Spend approximately **equal time** on each of:
 
 **Why?** Most reviewers form judgments before reaching your methods. Readers encounter your paper as: **title → abstract → introduction → figures → maybe the rest.**
 
-### Writing Style Guidelines
+### 写作风格指南 | Writing Style Guidelines
 
-#### Sentence-Level Clarity (Gopen & Swan's 7 Principles)
+#### 句子级清晰度（Gopen & Swan 的 7 项原则）
+
+这些原则基于读者实际如何处理散文。违反它们会迫使读者花费认知精力在结构上而不是内容上。
 
 These principles are based on how readers actually process prose. Violating them forces readers to spend cognitive effort on structure rather than content.
 
-| Principle | Rule | Example |
+| 原则 | 规则 | 示例 |
 |-----------|------|---------|
-| **Subject-verb proximity** | Keep subject and verb close | ❌ "The model, which was trained on..., achieves" → ✅ "The model achieves... after training on..." |
-| **Stress position** | Place emphasis at sentence ends | ❌ "Accuracy improves by 15% when using attention" → ✅ "When using attention, accuracy improves by **15%**" |
-| **Topic position** | Put context first, new info after | ✅ "Given these constraints, we propose..." |
-| **Old before new** | Familiar info → unfamiliar info | Link backward, then introduce new |
-| **One unit, one function** | Each paragraph makes one point | Split multi-point paragraphs |
-| **Action in verb** | Use verbs, not nominalizations | ❌ "We performed an analysis" → ✅ "We analyzed" |
-| **Context before new** | Set stage before presenting | Explain before showing equation |
+| **主谓接近** | 保持主语和动词靠近 | ❌ "The model, which was trained on..., achieves" → ✅ "The model achieves... after training on..." |
+| **强调位置** | 将重点放在句尾 | ❌ "Accuracy improves by 15% when using attention" → ✅ "When using attention, accuracy improves by **15%**" |
+| **主题位置** | 先放上下文，新信息在后 | ✅ "Given these constraints, we propose..." |
+| **旧信息在前** | 熟悉信息 → 不熟悉信息 | 向后链接，然后引入新信息 |
+| **一个单元，一个功能** | 每段表达一个观点 | 拆分多点段落 |
+| **动词中的动作** | 使用动词，不是名词化 | ❌ "We performed an analysis" → ✅ "We analyzed" |
+| **新信息前的上下文** | 在呈现之前设置舞台 | 在展示方程之前解释
 
-**Full 7 principles with detailed examples:** See [references/writing-guide.md](references/writing-guide.md#the-7-principles-of-reader-expectations)
+**完整 7 项原则及详细示例：** 参见 [references/writing-guide.md](references/writing-guide.md#the-7-principles-of-reader-expectations)
 
-#### Micro-Level Tips (Ethan Perez)
+#### 微观层面技巧（Ethan Perez）
+
+这些小的改变累积成显著更清晰的散文：
 
 These small changes accumulate into significantly clearer prose:
 
-- **Minimize pronouns**: ❌ "This shows..." → ✅ "This result shows..."
-- **Verbs early**: Position verbs near sentence start
-- **Unfold apostrophes**: ❌ "X's Y" → ✅ "The Y of X" (when awkward)
-- **Delete filler words**: "actually," "a bit," "very," "really," "basically," "quite," "essentially"
+- **最小化代词**：❌ "This shows..." → ✅ "This result shows..."
+- **动词提前**：将动词放在靠近句首的位置
+- **展开所有格**：❌ "X's Y" → ✅ "The Y of X"（当 awkward 时）
+- **删除填充词**："actually," "a bit," "very," "really," "basically," "quite," "essentially"
 
-**Full micro-tips with examples:** See [references/writing-guide.md](references/writing-guide.md#micro-level-writing-tips)
+**完整微观技巧及示例：** 参见 [references/writing-guide.md](references/writing-guide.md#micro-level-writing-tips)
 
-#### Word Choice (Zachary Lipton)
+#### 措辞选择（Zachary Lipton）
 
-- **Be specific**: ❌ "performance" → ✅ "accuracy" or "latency" (say what you mean)
-- **Eliminate hedging**: Drop "may" and "can" unless genuinely uncertain
-- **Avoid incremental vocabulary**: ❌ "combine," "modify," "expand" → ✅ "develop," "propose," "introduce"
-- **Delete intensifiers**: ❌ "provides *very* tight approximation" → ✅ "provides tight approximation"
+- **具体明确**：❌ "performance" → ✅ "accuracy" 或 "latency"（说出你的意思）
+- **消除模糊**：除非真正不确定，否则删除 "may" 和 "can"
+- **避免渐进词汇**：❌ "combine," "modify," "expand" → ✅ "develop," "propose," "introduce"
+- **删除强化词**：❌ "provides *very* tight approximation" → ✅ "provides tight approximation"
 
-#### Precision Over Brevity (Jacob Steinhardt)
+#### 精确胜于简洁（Jacob Steinhardt）
 
-- **Consistent terminology**: Different terms for same concept creates confusion. Pick one and stick with it.
-- **State assumptions formally**: Before theorems, list all assumptions explicitly
-- **Intuition + rigor**: Provide intuitive explanations alongside formal proofs
+- **一致的术语**：对同一概念使用不同术语会造成混淆。选择一个并坚持使用。
+- **正式陈述假设**：在定理之前，明确列出所有假设
+- **直觉 + 严谨**：在形式证明旁边提供直观解释
 
 ### What Reviewers Actually Read
 
