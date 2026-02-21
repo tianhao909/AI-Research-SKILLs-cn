@@ -1,36 +1,38 @@
-# Contributing to Claude AI Research Skills
+# 贡献指南 | Contributing to Claude AI Research Skills
+
+感谢您有兴趣做出贡献！本指南将帮助您向库中添加新技能。
 
 Thank you for your interest in contributing! This guide will help you add new skills to the library.
 
 ---
 
-## 🎯 What We're Building
+## 🎯 我们的目标 | What We're Building
 
-**Vision**: The most comprehensive open-source library of AI research skills for Claude Code.
+**愿景 | Vision**: 最全面的开源 AI 研究技能库，专为 Claude Code 设计。
 
 **Target**: 70 comprehensive skills covering the entire AI research lifecycle—from model architecture to production deployment.
 
-**Current Progress**: 7/70 skills (10%)
+**当前进展 | Current Progress**: 7/70 skills (10%)
 
-**Philosophy**: Quality > Quantity. We deleted 9 low-quality skills to maintain high standards.
-
----
-
-## 🤝 How to Contribute
-
-### Ways to Contribute
-
-1. **Add a new skill** - Most valuable contribution
-2. **Improve existing skills** - Update docs, add examples, fix errors
-3. **Report issues** - Outdated information, broken links, missing content
-4. **Share feedback** - What skills do you need? What's missing?
+**理念 | Philosophy**: Quality > Quantity (质量优于数量). We deleted 9 low-quality skills to maintain high standards.
 
 ---
 
-## 📝 Adding a New Skill
+## 🤝 如何贡献 | How to Contribute
 
-### Step 1: Choose a Skill 
-### Step 2: Fork and Clone
+### 贡献方式 | Ways to Contribute
+
+1. **Add a new skill** (添加新技能) - Most valuable contribution
+2. **Improve existing skills** (改进现有技能) - Update docs, add examples, fix errors
+3. **Report issues** (报告问题) - Outdated information, broken links, missing content
+4. **Share feedback** (分享反馈) - What skills do you need? What's missing?
+
+---
+
+## 📝 添加新技能 | Adding a New Skill
+
+### Step 1: Choose a Skill (选择一个技能)
+### Step 2: Fork and Clone (分叉并克隆)
 
 ```bash
 # Fork the repository on GitHub first
@@ -41,55 +43,56 @@ cd claude-ai-research-skills
 git checkout -b add-vllm-skill
 ```
 
-### Step 3: Use Skill Seeker MCP
+### Step 3: Use Skill Seeker MCP (使用 Skill Seeker MCP)
 
-**Option A: Documentation Scraping**
+**Option A: Documentation Scraping** (选项 A：文档爬取)
 ```bash
 # Create config file
 python3 cli/doc_scraper.py --interactive
 # Or copy and modify an existing config
+# 或者复制并修改现有配置
 cp configs/react.json configs/vllm.json
 
 # Scrape and build
 python3 cli/doc_scraper.py --config configs/vllm.json
 ```
 
-**Option B: GitHub Scraping**
+**Option B: GitHub Scraping** (选项 B：GitHub 爬取)
 ```bash
 # Scrape from GitHub repository
 export GITHUB_TOKEN=$(gh auth token)
 python3 cli/github_scraper.py --repo vllm-project/vllm --name vllm --description "High-performance LLM inference with PagedAttention"
 ```
 
-**Option C: Unified Scraping** (recommended for comprehensive skills)
+**Option C: Unified Scraping** (recommended for comprehensive skills) (推荐用于综合技能)
 ```bash
 # Combine documentation + GitHub + PDF
 python3 cli/unified_scraper.py --config configs/vllm_unified.json
 ```
 
-### Step 4: Move to Correct Directory
+### Step 4: Move to Correct Directory (移动到正确的目录)
 
 ```bash
 # Determine the category (see directory structure below)
-mv output/vllm/ 12-inference-serving/vllm/
+git mv output/vllm/ 12-inference-serving/vllm/
 
 # Move metadata
-mv output/vllm_data/ .metadata/vllm_data/
+git mv output/vllm_data/ .metadata/vllm_data/
 ```
 
-### Step 5: Validate Quality
+### Step 5: Validate Quality (验证质量)
 
 **Based on [Anthropic Official Best Practices](anthropic_official_docs/best_practices.md)**
 
-**Core Requirements** (or skill will be rejected):
-- ✅ YAML frontmatter with `name` (gerund form, e.g., "serving-llms") and `description` (third person, includes what AND when)
-- ✅ SKILL.md body: **200-300 lines** (under 500 lines maximum)
-- ✅ Progressive disclosure: SKILL.md as overview, details in separate reference files
-- ✅ Workflows with copy-paste checklists for complex tasks
-- ✅ When to use vs alternatives guidance
-- ✅ Common issues section with solutions
-- ✅ Concise content: assume Claude is smart, no over-explaining basics
-- ✅ Code examples with language detection (```python, ```bash, etc.)
+**Core Requirements** (or skill will be rejected) (核心要求，否则技能将被拒绝):
+- ✅ YAML frontmatter with `name` (gerund form, e.g., "serving-llms") and `description` (third person, includes what AND when) (YAML 元数据，包含 name（动名词形式）和 description（第三人称，包含什么和何时使用）)
+- ✅ SKILL.md body: **200-300 lines** (under 500 lines maximum) (SKILL.md 正文：200-300 行，最多不超过 500 行)
+- ✅ Progressive disclosure: SKILL.md as overview, details in separate reference files (渐进式披露：SKILL.md 作为概述，详情在单独的参考文件中)
+- ✅ Workflows with copy-paste checklists for complex tasks (针对复杂任务的工作流，包含可复制粘贴的清单)
+- ✅ When to use vs alternatives guidance (何时使用与替代方案的指导)
+- ✅ Common issues section with solutions (常见问题部分及解决方案)
+- ✅ Concise content: assume Claude is smart, no over-explaining basics (简洁内容：假设 Claude 很聪明，不要过度解释基础知识)
+- ✅ Code examples with language detection (```python, ```bash, etc.) (带语言检测的代码示例)
 
 **Gold Standard** (aim for this):
 - ✅ SKILL.md: 200-300 lines of focused, actionable guidance

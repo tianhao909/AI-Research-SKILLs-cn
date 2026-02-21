@@ -1,5 +1,7 @@
-# AI Research Engineering `Skills` Library
+# AI 研究工程技能库 | AI Research Engineering `Skills` Library
 
+> **最全面的开源 AI 研究工程技能库，专为 AI 智能体设计**
+>
 > **The most comprehensive open-source library of AI research engineering skills for AI agents**
 
 <p align="center">
@@ -15,26 +17,40 @@
   <a href="https://www.linkedin.com/company/orchestra-research/"><img src="https://img.shields.io/badge/LinkedIn-Follow-0A66C2.svg?logo=linkedin" alt="LinkedIn"></a>
 </p>
 
+---
+
+## 关于中文版 | About Chinese Version
+
+这是 [Orchestra-Research/AI-Research-SKILLs](https://github.com/Orchestra-Research/AI-Research-SKILLs) 的**中英双语版本**，旨在帮助中文开发者更好地学习和使用 AI 研究工程技能。
+
+This is the **bilingual (Chinese-English) version** of [Orchestra-Research/AI-Research-SKILLs](https://github.com/Orchestra-Research/AI-Research-SKILLs), designed to help Chinese developers better learn and use AI research engineering skills.
+
+- **翻译日期 | Translation Date**: 2026年2月
+- **中文版维护 | Chinese Version Maintainer**: [@tianhao909](https://github.com/tianhao909)
+- **原项目 | Original Project**: [Orchestra-Research/AI-Research-SKILLs](https://github.com/Orchestra-Research/AI-Research-SKILLs)
+
+---
+
 <div align="center">
 
-### **85 Skills Powering AI Research in 2026**
+### **85 项技能助力 2026 年 AI 研究 | 85 Skills Powering AI Research in 2026**
 
 </div>
 
 <details>
-<summary><b>View All 21 Categories</b></summary>
+<summary><b>查看所有 21 个分类 | View All 21 Categories</b></summary>
 
 <div align="center">
 
 | | | |
 |:---:|:---:|:---:|
-| **Model Architecture** (5) | **Fine-Tuning** (4) | **Post-Training** (8) |
-| **Distributed Training** (6) | **Optimization** (6) | **Inference** (4) |
-| **Tokenization** (2) | **Data Processing** (2) | **Evaluation** (3) |
-| **Safety & Alignment** (4) | **Agents** (4) | **RAG** (5) |
-| **Multimodal** (7) | **Prompt Engineering** (4) | **MLOps** (3) |
-| **Observability** (2) | **Infrastructure** (3) | **Mech Interp** (4) |
-| **Emerging Techniques** (6) | **ML Paper Writing** (1) | **Ideation** (2) |
+| **Model Architecture** (模型架构，5) | **Fine-Tuning** (微调，4) | **Post-Training** (后训练，8) |
+| **Distributed Training** (分布式训练，6) | **Optimization** (优化，6) | **Inference** (推理，4) |
+| **Tokenization** (分词，2) | **Data Processing** (数据处理，2) | **Evaluation** (评估，3) |
+| **Safety & Alignment** (安全与对齐，4) | **Agents** (智能体，4) | **RAG** (检索增强生成，5) |
+| **Multimodal** (多模态，7) | **Prompt Engineering** (提示工程，4) | **MLOps** (机器学习运维，3) |
+| **Observability** (可观测性，2) | **Infrastructure** (基础设施，3) | **Mech Interp** (机械可解释性，4) |
+| **Emerging Techniques** (新兴技术，6) | **ML Paper Writing** (机器学习论文写作，1) | **Ideation** (创意构思，2) |
 
 </div>
 
@@ -42,21 +58,23 @@
 
 ---
 
-## Table of Contents
+## 目录 | Table of Contents
 
-- [Our Mission](#our-mission)
-- [Path Towards AI Research Agent](#path-towards-ai-research-agent)
-- [Available AI Research Engineering Skills](#available-ai-research-engineering-skills)
-- [Demos](#demos)
-- [Skill Structure](#skill-structure)
-- [Roadmap](#roadmap)
-- [Repository Structure](#repository-structure)
-- [Use Cases](#use-cases)
-- [Contributing](#contributing)
-- [Community](#community)
+- [我们的使命 | Our Mission](#our-mission)
+- [通往 AI 研究智能体之路 | Path Towards AI Research Agent](#path-towards-ai-research-agent)
+- [可用的 AI 研究工程技能 | Available AI Research Engineering Skills](#available-ai-research-engineering-skills)
+- [演示 | Demos](#demos)
+- [技能结构 | Skill Structure](#skill-structure)
+- [路线图 | Roadmap](#roadmap)
+- [仓库结构 | Repository Structure](#repository-structure)
+- [使用案例 | Use Cases](#use-cases)
+- [贡献 | Contributing](#contributing)
+- [社区 | Community](#community)
 
 
-## Our Mission
+## 我们的使命 | Our Mission
+
+我们提供**工程能力层**，**使您的编码智能体能够编写和进行 AI 研究实验**，包括准备数据集、执行训练流程、部署模型以及构建 AI 智能体。
 
 We provide the layer of **Engineering Ability** that **enable your coding agent to write and conduct AI research experiments**, including preparing datasets, executing training pipelines, deploying models, and building your AI agents.
 <p align="center">
@@ -65,20 +83,26 @@ We provide the layer of **Engineering Ability** that **enable your coding agent 
   <em>System diagram of an AI research agent</em>
 </p>
 
-## Path Towards AI Research Agent
+## 通往 AI 研究智能体之路 | Path Towards AI Research Agent
+
+现代 AI 研究需要掌握数十种专用工具和框架。
+AI 研究人员花费更多时间调试基础设施而非测试假设——这减缓了科学发现的步伐。
+我们提供全面的专家级研究工程技能库，使 AI 智能体能够自主实施和执行 AI 研究实验的不同阶段——从数据准备和模型训练到评估和部署。
 
 Modern AI research requires mastering dozens of specialized tools and frameworks. 
 AI Researchers spend more time debugging infrastructure than testing hypotheses—slowing the pace of scientific discovery. 
 We provide a comprehensive library of expert-level research engineering skills that enable AI agents to autonomously implement and execute different stages of AI research experiments—from data preparation and model training to evaluation and deployment.
-  - Specialized Expertise - Each skill provides deep, production-ready knowledge of a specific framework (Megatron-LM, vLLM, TRL, etc.)
-  - End-to-End Coverage - 85 skills spanning the full AI research lifecycle, from model architecture to deployment
-  - Research-Grade Quality - Documentation sourced from official repos, real GitHub issues, and battle-tested production workflows
+  - **专业能力 | Specialized Expertise** - 每项技能提供特定框架（Megatron-LM、vLLM、TRL 等）的深度、生产就绪知识
+  - **端到端覆盖 | End-to-End Coverage** - 85 项技能涵盖完整的 AI 研究生涯周期，从模型架构到部署
+  - **研究级质量 | Research-Grade Quality** - 文档来源于官方仓库、真实的 GitHub 问题和经过实战检验的生产工作流
 
-## Available AI Research Engineering Skills
+## 可用的 AI 研究工程技能 | Available AI Research Engineering Skills
 
-**Quality over quantity**: Each skill provides comprehensive, expert-level guidance with real code examples, troubleshooting guides, and production-ready workflows.
+**质量优于数量 | Quality over quantity**: 每项技能都提供全面的专家级指导，包含真实的代码示例、故障排除指南和生产就绪的工作流。
 
-### 📦 Quick Install (Recommended)
+### 📦 快速安装（推荐）| Quick Install (Recommended)
+
+一键安装技能到**任何编码智能体**（Claude Code、OpenCode、Cursor、Codex、Gemini CLI、Qwen Code）：
 
 Install skills to **any coding agent** (Claude Code, OpenCode, Cursor, Codex, Gemini CLI, Qwen Code) with one command:
 
@@ -86,15 +110,17 @@ Install skills to **any coding agent** (Claude Code, OpenCode, Cursor, Codex, Ge
 npx @orchestra-research/ai-research-skills
 ```
 
+这会启动一个交互式安装程序，可以：
+
 This launches an interactive installer that:
-- **Auto-detects** your installed coding agents
-- **Installs** skills to `~/.orchestra/skills/` with symlinks to each agent
-- **Offers** everything, quickstart bundle, by category, or individual skills
-- **Updates** installed skills with latest versions
-- **Uninstalls** all or selected skills
+- **自动检测 | Auto-detects** 您安装的编码智能体
+- **安装 | Installs** 技能到 `~/.orchestra/skills/` 并为每个智能体创建符号链接
+- **提供 | Offers** 全部、快速入门包、按分类或单独技能
+- **更新 | Updates** 已安装的技能到最新版本
+- **卸载 | Uninstalls** 所有或选定的技能
 
 <details>
-<summary><b>CLI Commands</b></summary>
+<summary><b>命令行命令 | CLI Commands</b></summary>
 
 ```bash
 # Interactive installer (recommended)
@@ -109,6 +135,8 @@ npx @orchestra-research/ai-research-skills update    # Update installed skills
 
 <details>
 <summary><b>Claude Code Marketplace (Alternative)</b></summary>
+
+使用 **Claude Code CLI** 直接安装技能分类：
 
 Install skill categories directly using the **Claude Code CLI**:
 
@@ -126,78 +154,77 @@ Install skill categories directly using the **Claude Code CLI**:
 
 </details>
 
-### All 21 Categories (85 Skills)
+### 全部 21 个分类（85 项技能） | All 21 Categories (85 Skills)
 
 | Category | Skills | Included |
 |----------|--------|----------|
-| Model Architecture | 5 | LitGPT, Mamba, NanoGPT, RWKV, TorchTitan |
-| Tokenization | 2 | HuggingFace Tokenizers, SentencePiece |
-| Fine-Tuning | 4 | Axolotl, LLaMA-Factory, PEFT, Unsloth |
-| Mech Interp | 4 | TransformerLens, SAELens, pyvene, nnsight |
-| Data Processing | 2 | NeMo Curator, Ray Data |
-| Post-Training | 8 | TRL, GRPO, OpenRLHF, SimPO, verl, slime, miles, torchforge |
-| Safety | 4 | Constitutional AI, LlamaGuard, NeMo Guardrails, Prompt Guard |
-| Distributed | 6 | DeepSpeed, FSDP, Accelerate, Megatron-Core, Lightning, Ray Train |
-| Infrastructure | 3 | Modal, Lambda Labs, SkyPilot |
-| Optimization | 6 | Flash Attention, bitsandbytes, GPTQ, AWQ, HQQ, GGUF |
-| Evaluation | 3 | lm-eval-harness, BigCode, NeMo Evaluator |
-| Inference | 4 | vLLM, TensorRT-LLM, llama.cpp, SGLang |
-| MLOps | 3 | W&B, MLflow, TensorBoard |
-| Agents | 4 | LangChain, LlamaIndex, CrewAI, AutoGPT |
-| RAG | 5 | Chroma, FAISS, Pinecone, Qdrant, Sentence Transformers |
-| Prompt Eng | 4 | DSPy, Instructor, Guidance, Outlines |
-| Observability | 2 | LangSmith, Phoenix |
-| Multimodal | 7 | CLIP, Whisper, LLaVA, BLIP-2, SAM, Stable Diffusion, AudioCraft |
-| Emerging | 6 | MoE, Model Merging, Long Context, Speculative Decoding, Distillation, Pruning |
-| ML Paper Writing | 1 | ML Paper Writing (LaTeX templates, citation verification) |
-| Ideation | 2 | Research Brainstorming, Creative Thinking |
+| Model Architecture (模型架构) | 5 | LitGPT, Mamba, NanoGPT, RWKV, TorchTitan |
+| Tokenization (分词) | 2 | HuggingFace Tokenizers, SentencePiece |
+| Fine-Tuning (微调) | 4 | Axolotl, LLaMA-Factory, PEFT, Unsloth |
+| Mech Interp (机械可解释性) | 4 | TransformerLens, SAELens, pyvene, nnsight |
+| Data Processing (数据处理) | 2 | NeMo Curator, Ray Data |
+| Post-Training (后训练) | 8 | TRL, GRPO, OpenRLHF, SimPO, verl, slime, miles, torchforge |
+| Safety (安全) | 4 | Constitutional AI, LlamaGuard, NeMo Guardrails, Prompt Guard |
+| Distributed (分布式) | 6 | DeepSpeed, FSDP, Accelerate, Megatron-Core, Lightning, Ray Train |
+| Infrastructure (基础设施) | 3 | Modal, Lambda Labs, SkyPilot |
+| Optimization (优化) | 6 | Flash Attention, bitsandbytes, GPTQ, AWQ, HQQ, GGUF |
+| Evaluation (评估) | 3 | lm-eval-harness, BigCode, NeMo Evaluator |
+| Inference (推理) | 4 | vLLM, TensorRT-LLM, llama.cpp, SGLang |
+| MLOps (机器学习运维) | 3 | W&B, MLflow, TensorBoard |
+| Agents (智能体) | 4 | LangChain, LlamaIndex, CrewAI, AutoGPT |
+| RAG (检索增强生成) | 5 | Chroma, FAISS, Pinecone, Qdrant, Sentence Transformers |
+| Prompt Eng (提示工程) | 4 | DSPy, Instructor, Guidance, Outlines |
+| Observability (可观测性) | 2 | LangSmith, Phoenix |
+| Multimodal (多模态) | 7 | CLIP, Whisper, LLaVA, BLIP-2, SAM, Stable Diffusion, AudioCraft |
+| Emerging (新兴技术) | 6 | MoE, Model Merging, Long Context, Speculative Decoding, Distillation, Pruning |
+| ML Paper Writing (机器学习论文写作) | 1 | ML Paper Writing (LaTeX templates, citation verification) |
+| Ideation (创意构思) | 2 | Research Brainstorming, Creative Thinking |
 
 <details>
-<summary><b>View All 85 Skills in Details</b></summary>
+<summary><b>查看所有 85 项技能的详细信息 | View All 85 Skills in Details</b></summary>
 
-### 🏗️ Model Architecture (5 skills)
-- **[LitGPT](01-model-architecture/litgpt/)** - Lightning AI's 20+ clean LLM implementations with production training recipes (462 lines + 4 refs)
-- **[Mamba](01-model-architecture/mamba/)** - State-space models with O(n) complexity, 5× faster than Transformers (253 lines + 3 refs)
-- **[RWKV](01-model-architecture/rwkv/)** - RNN+Transformer hybrid, infinite context, Linux Foundation project (253 lines + 3 refs)
-- **[NanoGPT](01-model-architecture/nanogpt/)** - Educational GPT in ~300 lines by Karpathy (283 lines + 3 refs)
-- **[TorchTitan](01-model-architecture/torchtitan/)** - PyTorch-native distributed training for Llama 3.1 with 4D parallelism
+### 🏗️ 模型架构 | Model Architecture (5 skills)
+- **[LitGPT](01-model-architecture/litgpt/)** - Lightning AI 的 20+ 个简洁 LLM 实现，包含生产级训练配方（462 行 + 4 个参考文件）
+- **[Mamba](01-model-architecture/mamba/)** - 状态空间模型，O(n) 复杂度，比 Transformer 快 5 倍（253 行 + 3 个参考文件）
+- **[RWKV](01-model-architecture/rwkv/)** - RNN+Transformer 混合，无限上下文，Linux Foundation 项目（253 行 + 3 个参考文件）
+- **[NanoGPT](01-model-architecture/nanogpt/)** - Karpathy 的 ~300 行教育用 GPT 实现（283 行 + 3 个参考文件）
+- **[TorchTitan](01-model-architecture/torchtitan/)** - PyTorch 原生 Llama 3.1 分布式训练，支持 4D 并行
 
-### 🔤 Tokenization (2 skills)
-- **[HuggingFace Tokenizers](02-tokenization/huggingface-tokenizers/)** - Rust-based, <20s/GB, BPE/WordPiece/Unigram algorithms (486 lines + 4 refs)
-- **[SentencePiece](02-tokenization/sentencepiece/)** - Language-independent, 50k sentences/sec, used by T5/ALBERT (228 lines + 2 refs)
+### 🔤 分词 | Tokenization (2 skills)
+- **[HuggingFace Tokenizers](02-tokenization/huggingface-tokenizers/)** - Rust 基础，<20 秒/GB，BPE/WordPiece/Unigram 算法（486 行 + 4 个参考文件）
+- **[SentencePiece](02-tokenization/sentencepiece/)** - 与语言无关，5 万句/秒，T5/ALBERT 使用（228 行 + 2 个参考文件）
 
-### 🎯 Fine-Tuning (4 skills)
-- **[Axolotl](03-fine-tuning/axolotl/)** - YAML-based fine-tuning with 100+ models (156 lines + 4 refs)
-- **[LLaMA-Factory](03-fine-tuning/llama-factory/)** - WebUI no-code fine-tuning (78 lines + 5 refs)
-- **[Unsloth](03-fine-tuning/unsloth/)** - 2x faster QLoRA fine-tuning (75 lines + 4 refs)
-- **[PEFT](03-fine-tuning/peft/)** - Parameter-efficient fine-tuning with LoRA, QLoRA, DoRA, 25+ methods (431 lines + 2 refs)
+### 🎯 微调 | Fine-Tuning (4 skills)
+- **[Axolotl](03-fine-tuning/axolotl/)** - YAML 基础的微调，支持 100+ 模型（156 行 + 4 个参考文件）
+- **[LLaMA-Factory](03-fine-tuning/llama-factory/)** - WebUI 无代码微调（78 行 + 5 个参考文件）
+- **[Unsloth](03-fine-tuning/unsloth/)** - 2 倍更快的 QLoRA 微调（75 行 + 4 个参考文件）
+- **[PEFT](03-fine-tuning/peft/)** - 参数高效微调，支持 LoRA、QLoRA、DoRA 等 25+ 方法（431 行 + 2 个参考文件）
 
-### 🔬 Mechanistic Interpretability (4 skills)
-- **[TransformerLens](04-mechanistic-interpretability/transformer-lens/)** - Neel Nanda's library for mech interp with HookPoints, activation caching (346 lines + 3 refs)
-- **[SAELens](04-mechanistic-interpretability/saelens/)** - Sparse Autoencoder training and analysis for feature discovery (386 lines + 3 refs)
-- **[pyvene](04-mechanistic-interpretability/pyvene/)** - Stanford's causal intervention library with declarative configs (473 lines + 3 refs)
-- **[nnsight](04-mechanistic-interpretability/nnsight/)** - Remote interpretability via NDIF, run experiments on 70B+ models (436 lines + 3 refs)
+### 🔬 机械可解释性 | Mechanistic Interpretability (4 skills)
+- **[TransformerLens](04-mechanistic-interpretability/transformer-lens/)** - Neel Nanda 的机械可解释性库，包含 HookPoints、激活缓存（346 行 + 3 个参考文件）
+- **[SAELens](04-mechanistic-interpretability/saelens/)** - 稀疏自编码器训练与分析，用于特征发现（386 行 + 3 个参考文件）
+- **[pyvene](04-mechanistic-interpretability/pyvene/)** - 斯坦福的因果干预库，使用声明式配置（473 行 + 3 个参考文件）
+- **[nnsight](04-mechanistic-interpretability/nnsight/)** - 通过 NDIF 远程可解释性，在 70B+ 模型上运行实验（436 行 + 3 个参考文件）
 
+### 📊 数据处理 | Data Processing (2 skills)
+- **[Ray Data](05-data-processing/ray-data/)** - 分布式 ML 数据处理，流式执行，GPU 支持（318 行 + 2 个参考文件）
+- **[NeMo Curator](05-data-processing/nemo-curator/)** - GPU 加速数据管理，16 倍更快的去重（375 行 + 2 个参考文件）
 
-### 📊 Data Processing (2 skills)
-- **[Ray Data](05-data-processing/ray-data/)** - Distributed ML data processing, streaming execution, GPU support (318 lines + 2 refs)
-- **[NeMo Curator](05-data-processing/nemo-curator/)** - GPU-accelerated data curation, 16× faster deduplication (375 lines + 2 refs)
+### 🎓 后训练 | Post-Training (8 skills)
+- **[TRL Fine-Tuning](06-post-training/trl-fine-tuning/)** - Transformer 强化学习（447 行 + 4 个参考文件）
+- **[GRPO-RL-Training](06-post-training/grpo-rl-training/)** (TRL) - 使用 TRL 进行组相对策略优化（569 行，**黄金标准**）
+- **[OpenRLHF](06-post-training/openrlhf/)** - 完整的 RLHF 流程，支持 Ray + vLLM（241 行 + 4 个参考文件）
+- **[SimPO](06-post-training/simpo/)** - 简单偏好优化，无需参考模型（211 行 + 3 个参考文件）
+- **[verl](06-post-training/verl/)** - 字节的 HybridFlow RL 框架，FSDP/Megatron + vLLM/SGLang 后端（389 行 + 2 个参考文件）
+- **[slime](06-post-training/slime/)** - THUDM 的 Megatron+SGLang 框架，支持 GLM-4.x 模型（464 行 + 2 个参考文件）
+- **[miles](06-post-training/miles/)** - slime 的企业分支，支持 FP8、INT4、MoE 训练的推测 RL（315 行 + 2 个参考文件）
+- **[torchforge](06-post-training/torchforge/)** - Meta 的 PyTorch 原生 RL，包含 Monarch+TorchTitan+vLLM（380 行 + 2 个参考文件）
 
-### 🎓 Post-Training (8 skills)
-- **[TRL Fine-Tuning](06-post-training/trl-fine-tuning/)** - Transformer Reinforcement Learning (447 lines + 4 refs)
-- **[GRPO-RL-Training](06-post-training/grpo-rl-training/)** (TRL) - Group Relative Policy Optimization with TRL (569 lines, **gold standard**)
-- **[OpenRLHF](06-post-training/openrlhf/)** - Full RLHF pipeline with Ray + vLLM (241 lines + 4 refs)
-- **[SimPO](06-post-training/simpo/)** - Simple Preference Optimization, no reference model needed (211 lines + 3 refs)
-- **[verl](06-post-training/verl/)** - ByteDance's HybridFlow RL framework, FSDP/Megatron + vLLM/SGLang backends (389 lines + 2 refs)
-- **[slime](06-post-training/slime/)** - THUDM's Megatron+SGLang framework powering GLM-4.x models (464 lines + 2 refs)
-- **[miles](06-post-training/miles/)** - Enterprise fork of slime with FP8, INT4, speculative RL for MoE training (315 lines + 2 refs)
-- **[torchforge](06-post-training/torchforge/)** - Meta's PyTorch-native RL with Monarch+TorchTitan+vLLM (380 lines + 2 refs)
-
-### 🛡️ Safety & Alignment (4 skills)
-- **[Constitutional AI](07-safety-alignment/constitutional-ai/)** - AI-driven self-improvement via principles (282 lines)
-- **[LlamaGuard](07-safety-alignment/llamaguard/)** - Safety classifier for LLM inputs/outputs (329 lines)
-- **[NeMo Guardrails](07-safety-alignment/nemo-guardrails/)** - Programmable guardrails with Colang (289 lines)
-- **[Prompt Guard](07-safety-alignment/prompt-guard/)** - Meta's 86M prompt injection & jailbreak detector, 99%+ TPR, <2ms GPU (313 lines)
+### 🛡️ 安全与对齐 | Safety & Alignment (4 skills)
+- **[Constitutional AI](07-safety-alignment/constitutional-ai/)** - 通过原则驱动的 AI 自我改进（282 行）
+- **[LlamaGuard](07-safety-alignment/llamaguard/)** - LLM 输入/输出的安全分类器（329 行）
+- **[NeMo Guardrails](07-safety-alignment/nemo-guardrails/)** - 使用 Colang 的可编程护栏（289 行）
+- **[Prompt Guard](07-safety-alignment/prompt-guard/)** - Meta 的 86M 提示注入和越狱检测器，99%+ TPR，<2ms GPU 延迟（313 行）
 
 ### ⚡ Distributed Training (6 skills)
 - **[Megatron-Core](08-distributed-training/megatron-core/)** - NVIDIA's framework for training 2B-462B param models with 47% MFU on H100 (359 lines + 4 refs)
@@ -286,25 +313,33 @@ Install skill categories directly using the **Claude Code CLI**:
 
 </details>
 
-## Demos
+## 演示 | Demos
+
+本仓库中的所有 85 项技能都会自动同步到 [Orchestra Research](https://www.orchestra-research.com/research-skills)，您可以一键将技能添加到项目中，并与 AI 研究智能体一起使用。
 
 All 85 skills in this repo are automatically synced to [Orchestra Research](https://www.orchestra-research.com/research-skills), where you can add them to your projects with one click and use them with AI research agents.
 
+**查看技能实战 → [demos/](demos/README.md)**
+
 **See skills in action → [demos/](demos/README.md)**
+
+我们维护了一个精选的演示仓库集合，展示如何将技能用于真实的 AI 研究任务：
 
 We maintain a curated collection of demo repositories showing how to use skills for real AI research tasks:
 
 | Demo | Skills Used | What It Does |
 |------|-------------|--------------|
-| **[NeMo Eval: GPQA Benchmark](https://github.com/zechenzhangAGI/Nemo-Eval-Skill-Demo)** | NeMo Evaluator | Compare Llama 8B/70B/405B on graduate-level science questions |
-| **[LoRA Without Regret Reproduction](https://www.orchestra-research.com/perspectives/LLM-with-Orchestra)** | GRPO, TRL | Reproduce SFT + GRPO RL experiments via prompting |
-| **ML Paper Writing** *(coming soon)* | ML Paper Writing | Transform research repo → publication-ready paper |
-| **[Layer-Wise Quantization Experiment](https://github.com/AmberLJC/llama-quantization-experiment)** | llama.cpp, GGUF | Investigate optimal layer precision allocation—early layers at Q8 achieve 1.9× compression with 1.3% perplexity loss |
-| **[Cross-Lingual Alignment Analysis](https://github.com/AmberLJC/faiss-demo)** | FAISS | Quantify how well multilingual embeddings align semantic concepts across 8 languages using FAISS similarity search |
+| **[NeMo Eval: GPQA Benchmark](https://github.com/zechenzhangAGI/Nemo-Eval-Skill-Demo)** | NeMo Evaluator | Compare Llama 8B/70B/405B on graduate-level science questions (比较 Llama 8B/70B/405B 在研究生水平科学问题上的表现) |
+| **[LoRA Without Regret Reproduction](https://www.orchestra-research.com/perspectives/LLM-with-Orchestra)** | GRPO, TRL | Reproduce SFT + GRPO RL experiments via prompting (通过提示复现 SFT + GRPO RL 实验) |
+| **ML Paper Writing** *(coming soon)* | ML Paper Writing | Transform research repo → publication-ready paper (将研究仓库转换为可发表的论文) |
+| **[Layer-Wise Quantization Experiment](https://github.com/AmberLJC/llama-quantization-experiment)** | llama.cpp, GGUF | Investigate optimal layer precision allocation—early layers at Q8 achieve 1.9× compression with 1.3% perplexity loss (探索最优层精度分配——Q8 的前几层实现 1.9 倍压缩，困惑度仅损失 1.3%) |
+| **[Cross-Lingual Alignment Analysis](https://github.com/AmberLJC/faiss-demo)** | FAISS | Quantify how well multilingual embeddings align semantic concepts across 8 languages using FAISS similarity search (使用 FAISS 相似性搜索量化多语言嵌入在 8 种语言中对齐语义概念的效果) |
 
 **Featured Demo**: Reproduce Thinking Machines Lab's "LoRA Without Regret" paper **by simply prompting an AI agent**. The agent autonomously writes training code for both SFT and GRPO reinforcement learning, provisions H100 GPUs, runs LoRA rank ablation experiments overnight, and generates publication-ready analysis. No manual coding required—just describe what you want to reproduce. ([Blog](https://www.orchestra-research.com/perspectives/LLM-with-Orchestra) | [Video](https://www.youtube.com/watch?v=X0DoLYfXl5I))
 
-## Skill Structure
+## 技能结构 | Skill Structure
+
+每项技能都遵循经过实战检验的格式，以实现最大的实用性：
 
 Each skill follows a battle-tested format for maximum usefulness:
 
@@ -329,43 +364,47 @@ skill-name/
 ```
 
 <details>
-<summary><b>Quality Standards</b></summary>
+<summary><b>质量标准 | Quality Standards</b></summary>
 
-- 300KB+ documentation from official sources
-- Real GitHub issues & solutions (when available)
-- Code examples with language detection
-- Version history & breaking changes
-- Links to official docs
+- 300KB+ documentation from official sources (来自官方来源的 300KB+ 文档)
+- Real GitHub issues & solutions (when available) (真实的 GitHub 问题和解决方案)
+- Code examples with language detection (带语言检测的代码示例)
+- Version history & breaking changes (版本历史和破坏性变更)
+- Links to official docs (官方文档链接)
 
 </details>
 
-## Roadmap
+## 路线图 | Roadmap
+
+我们正在构建涵盖完整 AI 研究生涯周期的 80 项综合技能。查看我们的 [详细路线图](docs/ROADMAP.md) 了解完整的开发计划。
 
 We're building towards 80 comprehensive skills across the full AI research lifecycle. See our [detailed roadmap](docs/ROADMAP.md) for the complete development plan.
+
+[查看完整路线图 →](docs/ROADMAP.md)
 
 [View Full Roadmap →](docs/ROADMAP.md)
 
 <details>
-<summary><b>View Detailed Statistics</b></summary>
+<summary><b>查看详细统计数据 | View Detailed Statistics</b></summary>
 
 | Metric | Current | Target |
 |--------|---------|--------|
-| **Skills** | **85** (high-quality, standardized YAML) | 80 ✅ |
-| **Avg Lines/Skill** | **420 lines** (focused + progressive disclosure) | 200-600 lines |
-| **Documentation** | **~130,000 lines** total (SKILL.md + references) | 100,000+ lines |
-| **Gold Standard Skills** | **65** with comprehensive references | 50+ |
-| **Contributors** | 1 | 100+ |
-| **Coverage** | Architecture, Tokenization, Fine-Tuning, Mechanistic Interpretability, Data Processing, Post-Training, Safety, Distributed, Optimization, Evaluation, Infrastructure, Inference, Agents, RAG, Multimodal, Prompt Engineering, MLOps, Observability, ML Paper Writing, Ideation | Full Lifecycle ✅ |
+| **Skills** (技能) | **85** (high-quality, standardized YAML) | 80 ✅ |
+| **Avg Lines/Skill** (平均每技能行数) | **420 lines** (focused + progressive disclosure) | 200-600 lines |
+| **Documentation** (文档) | **~130,000 lines** total (SKILL.md + references) | 100,000+ lines |
+| **Gold Standard Skills** (黄金标准技能) | **65** with comprehensive references | 50+ |
+| **Contributors** (贡献者) | 1 | 100+ |
+| **Coverage** (覆盖范围) | Architecture, Tokenization, Fine-Tuning, Mechanistic Interpretability, Data Processing, Post-Training, Safety, Distributed, Optimization, Evaluation, Infrastructure, Inference, Agents, RAG, Multimodal, Prompt Engineering, MLOps, Observability, ML Paper Writing, Ideation | Full Lifecycle ✅ |
 
-**Recent Progress**: npm package `@orchestra-research/ai-research-skills` for one-command installation across all coding agents
+**Recent Progress** (最近进展): npm package `@orchestra-research/ai-research-skills` for one-command installation across all coding agents
 
-**Philosophy**: Quality > Quantity. Following [Anthropic official best practices](anthropic_official_docs/best_practices.md) - each skill provides 200-500 lines of focused, actionable guidance with progressive disclosure.
+**Philosophy** (理念): Quality > Quantity (质量优于数量). Following [Anthropic official best practices](anthropic_official_docs/best_practices.md) - each skill provides 200-500 lines of focused, actionable guidance with progressive disclosure.
 
 </details>
 
 
 
-## Repository Structure
+## 仓库结构 | Repository Structure
 
 ```
 claude-ai-research-skills/
@@ -397,63 +436,67 @@ claude-ai-research-skills/
 └── packages/ai-research-skills/ (npm package for one-command installation)
 ```
 
-## Use Cases
+## 使用案例 | Use Cases
 
-### For Researchers
+### 面向研究人员 | For Researchers
 "I need to fine-tune Llama 3 with custom data"
 → **03-fine-tuning/axolotl/** - YAML configs, 100+ model support
 
-### For ML Engineers
+### 面向 ML 工程师 | For ML Engineers
 "How do I optimize inference latency?"
 → **12-inference-serving/vllm/** - PagedAttention, batching
 
-### For Students
+### 面向学生 | For Students
 "I want to learn how transformers work"
 → **01-model-architecture/litgpt/** - Clean implementations
 
-### For Teams
+### 面向团队 | For Teams
 "We need to scale training to 100 GPUs"
 → **08-distributed-training/deepspeed/** - ZeRO stages, 3D parallelism
 
-## License
+## 许可证 | License
 
 MIT License - See [LICENSE](LICENSE) for details.
 
 **Note**: Individual skills may reference libraries with different licenses. Please check each project's license before use.
 
-## Acknowledgments
+**注意**: 单个技能可能引用不同许可证的库。请在使用前检查每个项目的许可证。
+
+## 致谢 | Acknowledgments
 
 Built with:
-- **[Claude Code](https://www.claude.com/product/claude-code)** - AI pair programming
-- **[Skill Seeker](https://github.com/yusufkaraaslan/Skill_Seekers)** - Automated doc scraping
-- **Open Source AI Community** - For amazing tools and docs
+- **[Claude Code](https://www.claude.com/product/claude-code)** - AI pair programming (AI 结对编程)
+- **[Skill Seeker](https://github.com/yusufkaraaslan/Skill_Seekers)** - Automated doc scraping (自动化文档爬取)
+- **Open Source AI Community** - For amazing tools and docs (感谢开源 AI 社区的出色工具和文档)
 
 Special thanks to:
 - EleutherAI, HuggingFace, NVIDIA, Lightning AI, Meta AI, Anthropic
-- All researchers who maintain excellent documentation
+- All researchers who maintain excellent documentation (所有维护优秀文档的研究人员)
 
 
-## Contributing
+## 贡献 | Contributing
+
+我们欢迎来自 AI 研究社区的贡献！查看 [CONTRIBUTING.md](CONTRIBUTING.md) 了解详细指南：
 
 We welcome contributions from the AI research community! See [CONTRIBUTING.md](CONTRIBUTING.md) for detailed guidelines on:
 
-- Adding new skills
-- Improving existing skills
-- Quality standards and best practices
-- Submission process
+- Adding new skills (添加新技能)
+- Improving existing skills (改进现有技能)
+- Quality standards and best practices (质量标准和最佳实践)
+- Submission process (提交流程)
 
 All contributors are featured in our [Contributors Hall of Fame](CONTRIBUTORS.md) 🌟
  
 
-## Recent Updates
+## 最近更新 | Recent Updates
 
 <details open>
-<summary><b>February 2026 - v0.15.0 🛡️ Prompt Guard & 83 Skills</b></summary>
+<summary><b>February 2026 - v0.15.0 🛡️ Prompt Guard & 83 Skills (2026 年 2 月 - v0.15.0 🛡️ Prompt Guard 与 83 项技能)</b></summary>
 
-- 🛡️ **NEW SKILL**: Prompt Guard - Meta's 86M prompt injection & jailbreak detector
-- ⚡ 99%+ TPR, <1% FPR, <2ms GPU latency, multilingual (8 languages)
-- 🔒 3 workflows: user input filtering, third-party data filtering, batch RAG processing
-- 📊 **83 total skills** across 20 categories
+- 🛡️ **NEW SKILL**: Prompt Guard - Meta's 86M prompt injection & jailbreak detector (Meta 的 86M 提示注入和越狱检测器)
+- ⚡ 99%+ TPR, <1% FPR, <2ms GPU latency, multilingual (8 languages) (99%+ 真阳性率，<1% 假阳性率，<2ms GPU 延迟，支持 8 种语言)
+- 🔒 3 workflows: user input filtering, third-party data filtering, batch RAG processing (3 个工作流：用户输入过滤、第三方数据过滤、批量 RAG 处理)
+- 📊 **83 total skills** across 20 categories (共 83 项技能，跨越 20 个分类)
 
 </details>
 
@@ -624,14 +667,16 @@ All contributors are featured in our [Contributors Hall of Fame](CONTRIBUTORS.md
 
 </details>
 
-## Community
+## 社区 | Community
+
+加入我们的社区，保持更新、提问并与其他 AI 研究人员建立联系：
 
 Join our community to stay updated, ask questions, and connect with other AI researchers:
 
-- **[SkillEvolve Meta-Skill](https://github.com/Skill-Evolve/meta-skill)** - Connect your agent to the collective intelligence of the community. Captures techniques discovered during sessions and shares them back as curated skills.
-- **[Slack Community](https://join.slack.com/t/orchestrarese-efu1990/shared_invite/zt-3iu6gr8io-zJvpkZTPToEviQ9KFZvNSg)** - Chat with the team and other users
-- **[Twitter/X](https://x.com/orch_research)** - Follow for updates and announcements
-- **[LinkedIn](https://www.linkedin.com/company/orchestra-research/)** - Connect professionally
+- **[SkillEvolve Meta-Skill](https://github.com/Skill-Evolve/meta-skill)** - Connect your agent to the collective intelligence of the community. Captures techniques discovered during sessions and shares them back as curated skills. (将您的智能体连接到社区的集体智慧。捕获会话中发现的技术并作为精选技能分享回来。)
+- **[Slack Community](https://join.slack.com/t/orchestrarese-efu1990/shared_invite/zt-3iu6gr8io-zJvpkZTPToEviQ9KFZvNSg)** - Chat with the team and other users (与团队和其他用户聊天)
+- **[Twitter/X](https://x.com/orch_research)** - Follow for updates and announcements (关注更新和公告)
+- **[LinkedIn](https://www.linkedin.com/company/orchestra-research/)** - Connect professionally (专业联系)
 
 ## Star History
 
