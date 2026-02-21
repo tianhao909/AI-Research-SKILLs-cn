@@ -436,31 +436,37 @@ NeurIPS, ICML, and ICLR all require paper checklists. See [references/checklists
 
 > "A paper is a short, rigorous, evidence-based technical story with a takeaway readers care about." — Neel Nanda
 
-### The Sources Behind This Guidance
+### 背后的来源 | The Sources Behind This Guidance
+
+本技能综合了在顶级场所发表大量论文的研究者的写作理念：
 
 This skill synthesizes writing philosophy from researchers who have published extensively at top venues:
 
-| Source | Key Contribution | Link |
+| 来源 | 关键贡献 | 链接 |
 |--------|-----------------|------|
-| **Neel Nanda** (Google DeepMind) | The Narrative Principle, What/Why/So What framework | [How to Write ML Papers](https://www.alignmentforum.org/posts/eJGptPbbFPZGLpjsp/highly-opinionated-advice-on-how-to-write-ml-papers) |
-| **Sebastian Farquhar** (DeepMind) | 5-sentence abstract formula | [How to Write ML Papers](https://sebastianfarquhar.com/on-research/2024/11/04/how_to_write_ml_papers/) |
-| **Gopen & Swan** | 7 principles of reader expectations | [Science of Scientific Writing](https://cseweb.ucsd.edu/~swanson/papers/science-of-writing.pdf) |
-| **Zachary Lipton** | Word choice, eliminating hedging | [Heuristics for Scientific Writing](https://www.approximatelycorrect.com/2018/01/29/heuristics-technical-scientific-writing-machine-learning-perspective/) |
-| **Jacob Steinhardt** (UC Berkeley) | Precision, consistent terminology | [Writing Tips](https://bounded-regret.ghost.io/) |
-| **Ethan Perez** (Anthropic) | Micro-level clarity tips | [Easy Paper Writing Tips](https://ethanperez.net/easy-paper-writing-tips/) |
-| **Andrej Karpathy** | Single contribution focus | Various lectures |
+| **Neel Nanda** (Google DeepMind) | 叙事原则，什么/为什么/那又怎样框架 | [如何写 ML 论文](https://www.alignmentforum.org/posts/eJGptPbbFPZGLpjsp/highly-opinionated-advice-on-how-to-write-ml-papers) |
+| **Sebastian Farquhar** (DeepMind) | 5 句话摘要公式 | [如何写 ML 论文](https://sebastianfarquhar.com/on-research/2024/11/04/how_to_write_ml_papers/) |
+| **Gopen & Swan** | 读者期望的 7 项原则 | [科学写作的科学](https://cseweb.ucsd.edu/~swanson/papers/science-of-writing.pdf) |
+| **Zachary Lipton** | 措辞选择，消除模糊 | [技术科学写作启发法](https://www.approximatelycorrect.com/2018/01/29/heuristics-technical-scientific-writing-machine-learning-perspective/) |
+| **Jacob Steinhardt** (UC Berkeley) | 精确性、一致的术语 | [写作建议](https://bounded-regret.ghost.io/) |
+| **Ethan Perez** | 微观层面的清晰度建议 | [简单论文写作技巧](https://ethanperez.net/easy-paper-writing-tips/) |
+| **Andrej Karpathy** | 单一贡献重点 | 各种讲座 |
 
-**For deeper dives into any of these, see:**
-- [references/writing-guide.md](references/writing-guide.md) - Full explanations with examples
-- [references/sources.md](references/sources.md) - Complete bibliography
+**更深入任何这些内容，参见：**
+- [references/writing-guide.md](references/writing-guide.md) - 带示例的完整解释
+- [references/sources.md](references/sources.md) - 完整参考书目
 
-### Time Allocation (From Neel Nanda)
+### 时间分配（来自 Neel Nanda）
+
+花费大约**相等的时间**在每一项上：
 
 Spend approximately **equal time** on each of:
-1. The abstract
-2. The introduction
-3. The figures
-4. Everything else combined
+1. 摘要
+2. 引言
+3. 图表
+4. 其他所有部分的总和
+
+**为什么？** 大多数审稿人在到达你的方法部分之前就形成了判断。读者接触你的论文顺序是：**标题 → 摘要 → 引言 → 图表 → 可能其余部分。**
 
 **Why?** Most reviewers form judgments before reaching your methods. Readers encounter your paper as: **title → abstract → introduction → figures → maybe the rest.**
 
