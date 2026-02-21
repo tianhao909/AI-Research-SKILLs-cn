@@ -239,49 +239,57 @@ Use this skill when:
 
 **Default: Be proactive. Deliver drafts, then iterate.**
 
-| Confidence Level | Action |
+| 信心水平 | 行动 |
 |-----------------|--------|
-| **High** (clear repo, obvious contribution) | Write full draft, deliver, iterate on feedback |
-| **Medium** (some ambiguity) | Write draft with flagged uncertainties, continue |
-| **Low** (major unknowns) | Ask 1-2 targeted questions, then draft |
+| **高**（清晰的仓库，明显的贡献） | 写完整草稿，提交，根据反馈迭代 |
+| **中**（有些模糊） | 写草稿并标记不确定性，继续 |
+| **低**（主要未知） | 问 1-2 个针对性问题，然后起草 |
 
-**Draft first, ask with the draft** (not before):
+**先起草，带着草稿提问**（而不是之前）：
 
-| Section | Draft Autonomously | Flag With Draft |
+| 部分 | 自主起草 | 在草稿中标记 |
 |---------|-------------------|-----------------|
-| Abstract | Yes | "Framed contribution as X—adjust if needed" |
-| Introduction | Yes | "Emphasized problem Y—correct if wrong" |
-| Methods | Yes | "Included details A, B, C—add missing pieces" |
-| Experiments | Yes | "Highlighted results 1, 2, 3—reorder if needed" |
-| Related Work | Yes | "Cited papers X, Y, Z—add any I missed" |
+| 摘要 | 是 | "将贡献框定为 X——根据需要调整" |
+| 引言 | 是 | "强调问题 Y——如果不正确请纠正" |
+| 方法 | 是 | "包括细节 A、B、C——添加缺失部分" |
+| 实验 | 是 | "突出结果 1、2、3——如果需要重新排序" |
+| 相关工作 | 是 | "引用论文 X、Y、Z——添加任何我遗漏的" |
 
-**Only block for input when:**
-- Target venue is unclear (affects page limits, framing)
-- Multiple contradictory framings seem equally valid
-- Results seem incomplete or inconsistent
-- Explicit request to review before continuing
+**仅在需要输入时阻塞：**
+- 目标场所不明确（影响页数限制、框架）
+- 多个相互矛盾的框架似乎同样有效
+- 结果看起来不完整或不一致
+- 明确要求在继续之前审查
 
-**Don't block for:**
-- Word choice decisions
-- Section ordering
-- Which specific results to show (make a choice, flag it)
-- Citation completeness (draft with what you find, note gaps)
+**不要阻塞于：**
+- 措辞选择
+- 部分排序
+- 显示哪些具体结果（做出选择，标记它）
+- 引用完整性（用你找到的内容起草，注意差距）
 
 ---
 
-## The Narrative Principle
+## 叙事原则 | The Narrative Principle
+
+**最关键的洞察**：你的论文不是一系列实验——它是一个有清晰贡献并得到证据支持的故事。
 
 **The single most critical insight**: Your paper is not a collection of experiments—it's a story with one clear contribution supported by evidence.
 
+每篇成功的 ML 论文都围绕 Neel Nanda 所称的"叙事"展开：一个简短、严谨、基于证据的技术故事，带有读者关心的结论。
+
 Every successful ML paper centers on what Neel Nanda calls "the narrative": a short, rigorous, evidence-based technical story with a takeaway readers care about.
 
-**Three Pillars (must be crystal clear by end of introduction):**
+**三大支柱**（在引言结束时必须非常清晰）：
 
-| Pillar | Description | Example |
+**Three Pillars** (must be crystal clear by end of introduction):
+
+| 支柱 | 描述 | 示例 |
 |--------|-------------|---------|
-| **The What** | 1-3 specific novel claims within cohesive theme | "We prove that X achieves Y under condition Z" |
-| **The Why** | Rigorous empirical evidence supporting claims | Strong baselines, experiments distinguishing hypotheses |
-| **The So What** | Why readers should care | Connection to recognized community problems |
+| **什么 **(What) | 1-3 个具体新颖的主张，属于连贯主题 | "我们证明 X 在条件 Z 下实现 Y" |
+| **为什么 **(Why) | 支持主张的严谨经验证据 | 强大的基线，区分假设的实验 |
+| **那又怎样 **(So What) | 为什么读者应该关心 | 与公认的社区问题相联系 |
+
+**如果你不能用一句话陈述你的贡献，你就还没有论文。**
 
 **If you cannot state your contribution in one sentence, you don't yet have a paper.**
 
